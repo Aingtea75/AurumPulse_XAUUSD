@@ -1,0 +1,650 @@
+0	01:13:08.635	Expert AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: removed
+0	01:13:08.651	Expert AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: loaded successfully
+0	01:13:23.729	TestGenerator: spread set to 10
+2	01:13:26.730	2026.04.01 00:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED inputs: MagicNumber=64949; Lots=0.01; SlippagePoints=30; EnableTrading=0; EnableMarketEntry=1; EnablePendingOrders=1; EnableSmartTrailing=1; EnableDynamicTP=1; TrailLockATR=1; TrailDistanceATR=1.2; TPExtensionATR=2; ATRPeriodHost=14; MinTrendScore=55; MinESPStrength=45; MaxESPAge=6; RequireFreshSTForMarket=1; UseDiagnostics=1; 
+0	01:13:26.745	2026.04.01 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: === AurumPulse XAUUSD v6.49 INTEGRATED TEST ===
+0	01:13:26.745	2026.04.01 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: SAFE DEFAULT: EnableTrading=false. Compile and validate before enabling.
+0	01:13:26.823	2026.04.01 01:00:00  Supertrend_Promax XAUUSD.m,H1: ---- PROFIL INSTRUMEN OTOMATIS - XAUUSD.m M60 ----
+0	01:13:26.823	2026.04.01 01:00:00  Supertrend_Promax XAUUSD.m,H1:   Jendela pengukuran   : 600 bar (ideal 600, min 300)
+0	01:13:26.823	2026.04.01 01:00:00  Supertrend_Promax XAUUSD.m,H1:   Karakter volatilitas : SANGAT TINGGI  (ATR/harga = 72.6 bp)
+0	01:13:26.823	2026.04.01 01:00:00  Supertrend_Promax XAUUSD.m,H1:   ATRMultiplier        : 2.40 (input) -> 2.28 (hasil ukur, target 1 flip / 30 bar)
+0	01:13:26.823	2026.04.01 01:00:00  Supertrend_Promax XAUUSD.m,H1:   Batas jenuh RSI      : 35.0/67.0 (input) -> 33.5/63.0 (sebaran nyata)
+0	01:13:26.823	2026.04.01 01:00:00  Supertrend_Promax XAUUSD.m,H1:   Acuan tubuh candle   : 0.57 x ATR (kebiasaan pasar ini)
+0	01:13:26.823	2026.04.01 01:00:00  Supertrend_Promax XAUUSD.m,H1:   Acuan chop           : 2.0 flip per 20 bar
+0	01:13:26.823	2026.04.01 01:00:00  Supertrend_Promax XAUUSD.m,H1:   CATATAN: nilai ini DIKUNCI utk sesi ini - tidak repaint, backtest reproducible.
+0	01:13:26.855	2026.04.01 01:00:00  HeikenAshi_Custom XAUUSD.m,H1: ---- PROFIL DERAU HEIKEN ASHI - XAUUSD.m M60 ----
+0	01:13:26.855	2026.04.01 01:00:00  HeikenAshi_Custom XAUUSD.m,H1:   Pergantian arah HA mentah : 27.3 per 100 bar (target 26.0)
+0	01:13:26.855	2026.04.01 01:00:00  HeikenAshi_Custom XAUUSD.m,H1:   MinFlipBars               : 3 (input) -> 3 (hasil ukur)
+0	01:13:26.855	2026.04.01 01:00:00  HeikenAshi_Custom XAUUSD.m,H1:   CATATAN: dikunci utk sesi ini - tidak repaint.
+0	01:13:26.902	2026.04.01 01:00:00  Entry_Signal_Pro XAUUSD.m,H1: ---- PROFIL RSI Entry_Signal_Pro - XAUUSD.m M60 ----
+0	01:13:26.902	2026.04.01 01:00:00  Entry_Signal_Pro XAUUSD.m,H1:   Batas jenuh : 35.0/67.0 (input) -> 32.5/64.2 (sebaran nyata)
+0	01:13:26.902	2026.04.01 01:00:00  Entry_Signal_Pro XAUUSD.m,H1:   CATATAN: dikunci utk sesi ini - tidak repaint.
+0	01:13:26.949	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1: ---- PROFIL SUPERSR - XAUUSD.m M60 ----
+0	01:13:26.949	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1:   Validasi swing    : AKTIF  (lookback 12 bar, tonjolan >= 1.10 xATR)
+0	01:13:26.949	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1:   Level BERBEDA lahir: resistance 17 | support 7 (dlm 300 bar) - INI yg menentukan kerapatan visual
+0	01:13:26.949	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1:   Cakupan bar (info)  : resistance 281/300 | support 248/300  (level yg sama diteruskan ke depan - wajar tinggi)
+0	01:13:26.949	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1:   Kekuatan level    : 65/100 (rata-rata)
+0	01:13:26.949	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1:   CARA MEMBACA: level berbeda >15 dlm 300 bar (H1) = masih rapat;
+0	01:13:26.949	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1:                 4-10 = wajar; <3 = mungkin terlalu ketat.
+0	01:13:26.980	2026.04.01 01:00:00  HeikenAshi_Custom XAUUSD.m,H1: ---- PROFIL DERAU HEIKEN ASHI - XAUUSD.m M60 ----
+0	01:13:26.980	2026.04.01 01:00:00  HeikenAshi_Custom XAUUSD.m,H1:   Pergantian arah HA mentah : 27.3 per 100 bar (target 26.0)
+0	01:13:26.980	2026.04.01 01:00:00  HeikenAshi_Custom XAUUSD.m,H1:   MinFlipBars               : 3 (input) -> 3 (hasil ukur)
+0	01:13:26.980	2026.04.01 01:00:00  HeikenAshi_Custom XAUUSD.m,H1:   CATATAN: dikunci utk sesi ini - tidak repaint.
+0	01:13:27.043	2026.04.01 01:00:00  Entry_Signal_Pro XAUUSD.m,H1: ---- PROFIL RSI Entry_Signal_Pro - XAUUSD.m M60 ----
+0	01:13:27.043	2026.04.01 01:00:00  Entry_Signal_Pro XAUUSD.m,H1:   Batas jenuh : 35.0/67.0 (input) -> 32.5/64.2 (sebaran nyata)
+0	01:13:27.043	2026.04.01 01:00:00  Entry_Signal_Pro XAUUSD.m,H1:   CATATAN: dikunci utk sesi ini - tidak repaint.
+0	01:13:27.103	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1: ---- PROFIL SUPERSR - XAUUSD.m M60 ----
+0	01:13:27.103	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1:   Validasi swing    : AKTIF  (lookback 12 bar, tonjolan >= 1.10 xATR)
+0	01:13:27.104	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1:   Level BERBEDA lahir: resistance 17 | support 7 (dlm 300 bar) - INI yg menentukan kerapatan visual
+0	01:13:27.104	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1:   Cakupan bar (info)  : resistance 281/300 | support 248/300  (level yg sama diteruskan ke depan - wajar tinggi)
+0	01:13:27.104	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1:   Kekuatan level    : 65/100 (rata-rata)
+0	01:13:27.104	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1:   CARA MEMBACA: level berbeda >15 dlm 300 bar (H1) = masih rapat;
+0	01:13:27.104	2026.04.01 01:00:00  SuperSR_6 XAUUSD.m,H1:                 4-10 = wajar; <3 = mungkin terlalu ketat.
+0	01:13:27.104	2026.04.01 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=49.8 grade=1 chop=50.0 HA=1 ESP=0/55 age=999 rev=0 SR=0/0 hint=0
+0	01:13:27.355	2026.04.01 02:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 20bar panah 999bar] BUY 4680.85 | skor 66 kuorum 3/4 | ST 61 HA 83 ESP 54? SR bebas
+0	01:13:27.355	2026.04.01 02:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4638.70 (ST+rapat, 1.38xATR) TP1 4699.40 TP2 4714.57 (plafon) | R:R 1:0.80 | kelas 2 chop 0
+0	01:13:27.355	2026.04.01 02:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=18 | SRkuat=100 | ESPtenaga=95 | teregang=2.33xATR | struktur=61
+0	01:13:27.355	2026.04.01 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=61.3 grade=2 chop=0.0 HA=1 ESP=0/54 age=1000 rev=0 SR=0/0 hint=2
+0	01:13:27.527	2026.04.01 03:00:00  Supertrend_Promax XAUUSD.m,H1: [TP1 TERSENTUH] umur [B] umur 1 bar | MFE 0.37R
+0	01:13:27.527	2026.04.01 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=61.0 grade=2 chop=0.0 HA=1 ESP=0/52 age=1001 rev=0 SR=0/0 hint=2
+0	01:13:27.886	2026.04.01 04:00:00  Supertrend_Promax XAUUSD.m,H1: [TP2 TERSENTUH] umur [B] umur 2 bar | MFE 0.71R MAE -0.00R  <- SUKSES PENUH
+0	01:13:27.886	2026.04.01 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=84.1 grade=3 chop=0.0 HA=1 ESP=0/77 age=1002 rev=0 SR=0/0 hint=2
+0	01:13:28.354	2026.04.01 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=82.3 grade=3 chop=0.0 HA=1 ESP=0/51 age=1003 rev=0 SR=0/0 hint=2
+0	01:13:28.618	2026.04.01 06:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 24bar panah 999bar] BUY 4684.53 | skor 72 kuorum 3/4 | ST 75 HA 85 ESP 62? SR bebas
+0	01:13:28.618	2026.04.01 06:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4654.33 (swing, 1.02xATR) TP1 4702.48 TP2 4717.17 (plafon) | R:R 1:1.08 | kelas 3 chop 0
+0	01:13:28.618	2026.04.01 06:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=22 | SRkuat=100 | ESPtenaga=65 | teregang=1.45xATR | struktur=75
+0	01:13:28.619	2026.04.01 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=74.8 grade=3 chop=0.0 HA=1 ESP=0/61 age=1004 rev=0 SR=0/0 hint=2
+0	01:13:28.824	2026.04.01 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=72.6 grade=3 chop=0.0 HA=1 ESP=0/69 age=1005 rev=0 SR=0/0 hint=2
+0	01:13:29.027	2026.04.01 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=53.5 grade=2 chop=0.0 HA=1 ESP=0/68 age=1006 rev=0 SR=0/0 hint=2
+0	01:13:29.339	2026.04.01 09:00:00  Supertrend_Promax XAUUSD.m,H1: [TP1 TERSENTUH] umur [B] umur 3 bar | MFE 0.00R
+0	01:13:29.339	2026.04.01 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=60.0 grade=2 chop=0.0 HA=1 ESP=0/59 age=1007 rev=0 SR=0/0 hint=2
+0	01:13:29.714	2026.04.01 10:00:00  Supertrend_Promax XAUUSD.m,H1: [TP2 TERSENTUH] umur [B] umur 4 bar | MFE 1.52R MAE -0.27R  <- SUKSES PENUH
+0	01:13:29.714	2026.04.01 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=63.7 grade=2 chop=0.0 HA=1 ESP=0/66 age=1008 rev=0 SR=0/0 hint=2
+0	01:13:30.078	2026.04.01 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=70.8 grade=3 chop=0.0 HA=1 ESP=0/59 age=1009 rev=0 SR=0/1 hint=2
+0	01:13:30.385	2026.04.01 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=74.3 grade=3 chop=0.0 HA=1 ESP=0/40 age=1010 rev=0 SR=0/0 hint=2
+0	01:13:30.652	2026.04.01 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=72.0 grade=3 chop=0.0 HA=1 ESP=0/38 age=1011 rev=0 SR=0/1 hint=2
+0	01:13:30.871	2026.04.01 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=75.8 grade=3 chop=0.0 HA=1 ESP=0/39 age=1012 rev=0 SR=0/1 hint=2
+0	01:13:31.183	2026.04.01 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=85.6 grade=3 chop=0.0 HA=1 ESP=0/80 age=1013 rev=0 SR=0/0 hint=2
+0	01:13:31.608	2026.04.01 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=84.2 grade=3 chop=0.0 HA=1 ESP=0/56 age=1014 rev=0 SR=0/1 hint=2
+0	01:13:32.154	2026.04.01 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=76.1 grade=3 chop=0.0 HA=1 ESP=0/45 age=1015 rev=0 SR=0/1 hint=2
+0	01:13:32.775	2026.04.01 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=78.1 grade=3 chop=0.0 HA=1 ESP=0/46 age=1016 rev=0 SR=0/1 hint=2
+0	01:13:33.245	2026.04.01 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=83.0 grade=3 chop=0.0 HA=1 ESP=0/74 age=1017 rev=0 SR=0/0 hint=2
+0	01:13:33.590	2026.04.01 20:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 38bar panah 999bar] BUY 4787.33 | skor 76 kuorum 3/4 | ST 89 HA 82 ESP 57? SR bebas
+0	01:13:33.590	2026.04.01 20:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4746.55 (ST+rapat, 1.38xATR) TP1 4805.27 TP2 4819.95 (plafon) | R:R 1:0.80 | kelas 3 chop 0
+0	01:13:33.590	2026.04.01 20:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=36 | SRkuat=100 | ESPtenaga=89 | teregang=2.44xATR | struktur=89
+0	01:13:33.590	2026.04.01 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=88.7 grade=3 chop=0.0 HA=1 ESP=0/56 age=1018 rev=0 SR=0/0 hint=2
+0	01:13:33.996	2026.04.01 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=89.7 grade=3 chop=0.0 HA=1 ESP=0/48 age=1019 rev=0 SR=0/0 hint=2
+0	01:13:34.543	2026.04.01 22:00:00  Supertrend_Promax XAUUSD.m,H1: [SL TERSENTUH] umur [B] umur 2 bar | MFE 0.00R MAE -0.84R | TP1 TIDAK kena
+0	01:13:34.548	2026.04.01 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=62.1 grade=2 chop=0.0 HA=1 ESP=0/45 age=1020 rev=0 SR=0/0 hint=1
+0	01:13:35.027	2026.04.01 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=63.1 grade=2 chop=0.0 HA=1 ESP=0/50 age=1021 rev=0 SR=0/0 hint=2
+0	01:13:35.199	2026.04.02 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=58.6 grade=2 chop=0.0 HA=1 ESP=0/80 age=1022 rev=0 SR=0/0 hint=2
+0	01:13:35.401	2026.04.02 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=63.6 grade=2 chop=0.0 HA=1 ESP=0/56 age=1023 rev=0 SR=0/1 hint=2
+0	01:13:35.690	2026.04.02 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=71.2 grade=3 chop=0.0 HA=1 ESP=0/61 age=1024 rev=0 SR=0/1 hint=2
+0	01:13:35.982	2026.04.02 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=70.8 grade=3 chop=0.0 HA=1 ESP=0/43 age=1025 rev=0 SR=0/1 hint=2
+0	01:13:36.745	2026.04.02 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=-1 score=3.8 grade=0 chop=50.0 HA=1 ESP=-1/100 age=0 rev=-1 SR=0/0 hint=0
+0	01:13:37.246	2026.04.02 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=4.0 grade=0 chop=50.0 HA=1 ESP=-1/100 age=1 rev=0 SR=0/0 hint=0
+0	01:13:37.558	2026.04.02 07:00:00  Supertrend_Promax XAUUSD.m,H1:    [VOL] efisiensi=0.153 | volRel=0.70 | volArah=1.26 | chop=50 | ATR=39.43
+0	01:13:37.558	2026.04.02 07:00:00  Supertrend_Promax XAUUSD.m,H1: [LAHIR] jalur C (flip-HA umur 0bar) SELL 4676.27 | SL 4719.64 TP1 4652.61 TP2 4636.84 | skor 64 kuorum 3/4 | R:R 1:0.91
+0	01:13:37.558	2026.04.02 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=22.0 grade=0 chop=50.0 HA=-1 ESP=-1/91 age=2 rev=0 SR=0/0 hint=0
+0	01:13:37.762	2026.04.02 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=29.9 grade=0 chop=50.0 HA=-1 ESP=-1/100 age=0 rev=-1 SR=1/0 hint=0
+0	01:13:38.199	2026.04.02 09:00:00  Supertrend_Promax XAUUSD.m,H1: [TP1] jalur C umur 2 bar | MFE 1.89R
+0	01:13:38.199	2026.04.02 09:00:00  Supertrend_Promax XAUUSD.m,H1: [TP2] jalur C umur 2 bar | MFE 1.89R MAE 0.00R | skor-lahir 64 kuorum-lahir 3  <- SUKSES PENUH
+0	01:13:38.199	2026.04.02 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=35.1 grade=1 chop=50.0 HA=-1 ESP=-1/100 age=1 rev=0 SR=0/0 hint=0
+0	01:13:38.683	2026.04.02 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=58.9 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=2 rev=0 SR=0/0 hint=2
+0	01:13:38.996	2026.04.02 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=43.1 grade=1 chop=50.0 HA=-1 ESP=-1/69 age=3 rev=0 SR=0/0 hint=0
+0	01:13:39.324	2026.04.02 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=36.2 grade=1 chop=50.0 HA=-1 ESP=-1/66 age=4 rev=0 SR=0/0 hint=0
+0	01:13:39.605	2026.04.02 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=32.3 grade=1 chop=50.0 HA=-1 ESP=-1/70 age=5 rev=0 SR=0/0 hint=0
+0	01:13:39.933	2026.04.02 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=33.0 grade=1 chop=50.0 HA=-1 ESP=-1/63 age=0 rev=-1 SR=0/0 hint=0
+0	01:13:40.259	2026.04.02 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=44.3 grade=1 chop=50.0 HA=-1 ESP=-1/87 age=1 rev=0 SR=0/0 hint=0
+0	01:13:40.687	2026.04.02 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=41.9 grade=1 chop=50.0 HA=-1 ESP=-1/96 age=2 rev=0 SR=0/0 hint=0
+0	01:13:41.263	2026.04.02 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=31.9 grade=1 chop=50.0 HA=-1 ESP=-1/26 age=3 rev=0 SR=0/0 hint=0
+0	01:13:41.888	2026.04.02 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=16.4 grade=0 chop=50.0 HA=-1 ESP=-1/58 age=4 rev=0 SR=0/0 hint=0
+0	01:13:42.402	2026.04.02 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=0.0 grade=0 chop=50.0 HA=-1 ESP=-1/13 age=5 rev=0 SR=0/0 hint=0
+0	01:13:42.808	2026.04.02 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=16.7 grade=0 chop=50.0 HA=1 ESP=-1/17 age=6 rev=0 SR=0/0 hint=0
+0	01:13:43.215	2026.04.02 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=17.4 grade=0 chop=50.0 HA=1 ESP=-1/33 age=7 rev=0 SR=0/0 hint=0
+0	01:13:43.574	2026.04.02 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=9.4 grade=0 chop=50.0 HA=1 ESP=-1/18 age=8 rev=0 SR=0/1 hint=0
+0	01:13:43.918	2026.04.02 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=6.9 grade=0 chop=50.0 HA=1 ESP=-1/30 age=9 rev=0 SR=0/1 hint=0
+0	01:13:44.090	2026.04.06 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=4.7 grade=0 chop=50.0 HA=1 ESP=-1/24 age=10 rev=0 SR=0/0 hint=0
+0	01:13:44.498	2026.04.06 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=26.9 grade=0 chop=0.0 HA=1 ESP=-1/100 age=11 rev=0 SR=0/0 hint=0
+0	01:13:44.714	2026.04.06 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=29.0 grade=0 chop=0.0 HA=1 ESP=-1/100 age=12 rev=0 SR=0/0 hint=0
+0	01:13:45.027	2026.04.06 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=31.2 grade=1 chop=0.0 HA=1 ESP=-1/98 age=13 rev=0 SR=0/0 hint=0
+0	01:13:45.402	2026.04.06 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=22.1 grade=0 chop=0.0 HA=-1 ESP=-1/70 age=14 rev=0 SR=0/0 hint=0
+0	01:13:45.745	2026.04.06 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=25.7 grade=0 chop=0.0 HA=-1 ESP=-1/40 age=15 rev=0 SR=0/0 hint=0
+0	01:13:45.996	2026.04.06 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=27.7 grade=0 chop=0.0 HA=-1 ESP=-1/40 age=16 rev=0 SR=0/0 hint=0
+0	01:13:46.199	2026.04.06 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=36.2 grade=1 chop=0.0 HA=-1 ESP=-1/41 age=17 rev=0 SR=0/0 hint=0
+0	01:13:46.361	2026.04.06 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=42.8 grade=1 chop=0.0 HA=-1 ESP=-1/53 age=18 rev=0 SR=0/0 hint=0
+0	01:13:46.574	2026.04.06 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=45.3 grade=1 chop=0.0 HA=-1 ESP=-1/38 age=19 rev=0 SR=0/0 hint=0
+0	01:13:46.820	2026.04.06 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=47.0 grade=1 chop=0.0 HA=1 ESP=1/55 age=0 rev=1 SR=0/1 hint=0
+0	01:13:47.105	2026.04.06 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=1 score=64.9 grade=2 chop=50.0 HA=1 ESP=1/71 age=1 rev=0 SR=0/1 hint=2
+0	01:13:47.358	2026.04.06 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=68.3 grade=2 chop=50.0 HA=1 ESP=1/67 age=2 rev=0 SR=0/1 hint=2
+0	01:13:47.584	2026.04.06 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=60.6 grade=2 chop=50.0 HA=1 ESP=1/46 age=3 rev=0 SR=0/1 hint=2
+0	01:13:47.761	2026.04.06 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=52.7 grade=2 chop=50.0 HA=1 ESP=1/46 age=4 rev=0 SR=0/1 hint=2
+0	01:13:48.042	2026.04.06 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=28.6 grade=0 chop=50.0 HA=1 ESP=1/77 age=5 rev=0 SR=0/0 hint=0
+0	01:13:48.480	2026.04.06 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=25.2 grade=0 chop=50.0 HA=1 ESP=1/82 age=6 rev=0 SR=0/0 hint=0
+0	01:13:49.001	2026.04.06 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=27.5 grade=0 chop=50.0 HA=1 ESP=1/65 age=7 rev=0 SR=0/1 hint=0
+0	01:13:49.386	2026.04.06 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=22.5 grade=0 chop=50.0 HA=1 ESP=1/100 age=8 rev=0 SR=0/0 hint=0
+0	01:13:49.668	2026.04.06 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=7.4 grade=0 chop=50.0 HA=1 ESP=1/100 age=9 rev=0 SR=0/0 hint=0
+0	01:13:49.996	2026.04.06 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=5.9 grade=0 chop=50.0 HA=1 ESP=1/100 age=10 rev=0 SR=0/0 hint=0
+0	01:13:50.310	2026.04.06 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=4.5 grade=0 chop=50.0 HA=-1 ESP=1/100 age=11 rev=0 SR=0/0 hint=0
+0	01:13:50.433	2026.04.06 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=5.8 grade=0 chop=50.0 HA=-1 ESP=1/100 age=12 rev=0 SR=0/0 hint=0
+0	01:13:50.542	2026.04.07 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=3.4 grade=0 chop=50.0 HA=-1 ESP=1/100 age=13 rev=0 SR=0/0 hint=0
+0	01:13:50.683	2026.04.07 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=0.0 grade=0 chop=50.0 HA=-1 ESP=1/25 age=14 rev=0 SR=0/0 hint=0
+0	01:13:50.793	2026.04.07 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=0.0 grade=0 chop=50.0 HA=-1 ESP=1/23 age=15 rev=0 SR=0/0 hint=0
+0	01:13:50.969	2026.04.07 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=0.0 grade=0 chop=50.0 HA=-1 ESP=1/74 age=16 rev=0 SR=0/0 hint=0
+0	01:13:51.501	2026.04.07 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=-1 score=15.5 grade=0 chop=100.0 HA=-1 ESP=1/100 age=17 rev=0 SR=0/0 hint=0
+0	01:13:51.792	2026.04.07 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=26.3 grade=0 chop=100.0 HA=-1 ESP=1/100 age=18 rev=0 SR=0/1 hint=0
+0	01:13:51.995	2026.04.07 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=32.6 grade=1 chop=100.0 HA=-1 ESP=1/62 age=19 rev=0 SR=0/1 hint=0
+0	01:13:52.161	2026.04.07 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=13.4 grade=0 chop=100.0 HA=-1 ESP=1/7 age=20 rev=0 SR=0/1 hint=0
+0	01:13:52.481	2026.04.07 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=32.0 grade=1 chop=50.0 HA=-1 ESP=1/82 age=21 rev=0 SR=0/0 hint=0
+0	01:13:52.776	2026.04.07 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=27.5 grade=0 chop=50.0 HA=-1 ESP=1/33 age=22 rev=0 SR=0/1 hint=0
+0	01:13:53.027	2026.04.07 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=21.6 grade=0 chop=50.0 HA=-1 ESP=1/63 age=23 rev=0 SR=0/0 hint=0
+0	01:13:53.488	2026.04.07 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=1 score=4.0 grade=0 chop=100.0 HA=-1 ESP=1/61 age=24 rev=0 SR=0/0 hint=0
+0	01:13:53.804	2026.04.07 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=3.6 grade=0 chop=100.0 HA=-1 ESP=1/30 age=25 rev=0 SR=0/0 hint=0
+0	01:13:54.254	2026.04.07 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=0.0 grade=0 chop=100.0 HA=1 ESP=1/33 age=26 rev=0 SR=0/0 hint=0
+0	01:13:54.636	2026.04.07 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=7.4 grade=0 chop=100.0 HA=1 ESP=1/90 age=27 rev=0 SR=0/0 hint=0
+0	01:13:55.026	2026.04.07 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=3.9 grade=0 chop=100.0 HA=1 ESP=1/71 age=28 rev=0 SR=0/0 hint=0
+0	01:13:55.480	2026.04.07 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=6.5 grade=0 chop=100.0 HA=1 ESP=1/100 age=29 rev=0 SR=1/0 hint=0
+0	01:13:55.996	2026.04.07 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=10.3 grade=0 chop=100.0 HA=1 ESP=1/100 age=30 rev=0 SR=1/0 hint=0
+0	01:13:56.308	2026.04.07 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=21.3 grade=0 chop=100.0 HA=-1 ESP=1/74 age=31 rev=0 SR=0/0 hint=0
+0	01:13:56.714	2026.04.07 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=4.1 grade=0 chop=100.0 HA=-1 ESP=1/22 age=32 rev=0 SR=0/0 hint=0
+0	01:13:57.050	2026.04.07 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=2.6 grade=0 chop=100.0 HA=-1 ESP=1/46 age=33 rev=0 SR=0/1 hint=0
+0	01:13:57.386	2026.04.07 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=0.0 grade=0 chop=100.0 HA=-1 ESP=1/15 age=34 rev=0 SR=0/0 hint=0
+0	01:13:57.902	2026.04.07 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=11.5 grade=0 chop=100.0 HA=1 ESP=1/56 age=35 rev=0 SR=0/0 hint=0
+0	01:13:58.261	2026.04.08 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=17.1 grade=0 chop=100.0 HA=1 ESP=1/44 age=0 rev=0 SR=0/0 hint=0
+0	01:13:58.761	2026.04.08 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=43.4 grade=1 chop=50.0 HA=1 ESP=1/83 age=1 rev=0 SR=0/0 hint=0
+0	01:13:59.168	2026.04.08 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=59.9 grade=2 chop=50.0 HA=1 ESP=1/68 age=2 rev=0 SR=0/0 hint=2
+0	01:13:59.636	2026.04.08 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=66.5 grade=2 chop=50.0 HA=1 ESP=1/60 age=3 rev=0 SR=0/0 hint=2
+0	01:14:00.074	2026.04.08 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=59.2 grade=2 chop=50.0 HA=1 ESP=1/42 age=4 rev=0 SR=0/0 hint=2
+0	01:14:00.293	2026.04.08 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=54.2 grade=2 chop=50.0 HA=1 ESP=1/39 age=5 rev=0 SR=0/0 hint=2
+0	01:14:00.519	2026.04.08 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=36.6 grade=1 chop=50.0 HA=1 ESP=1/61 age=6 rev=0 SR=0/0 hint=0
+0	01:14:00.699	2026.04.08 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=27.7 grade=0 chop=50.0 HA=1 ESP=1/66 age=7 rev=0 SR=0/0 hint=0
+0	01:14:00.906	2026.04.08 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=52.0 grade=2 chop=0.0 HA=1 ESP=1/42 age=8 rev=0 SR=0/1 hint=2
+0	01:14:01.199	2026.04.08 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=49.2 grade=1 chop=0.0 HA=1 ESP=1/49 age=9 rev=0 SR=0/0 hint=0
+0	01:14:01.478	2026.04.08 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=24.7 grade=0 chop=0.0 HA=1 ESP=1/34 age=10 rev=0 SR=0/0 hint=0
+0	01:14:01.745	2026.04.08 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=24.8 grade=0 chop=0.0 HA=1 ESP=1/85 age=11 rev=0 SR=0/0 hint=0
+0	01:14:02.033	2026.04.08 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=24.1 grade=0 chop=0.0 HA=1 ESP=-1/100 age=0 rev=-1 SR=0/0 hint=0
+0	01:14:02.246	2026.04.08 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=28.1 grade=0 chop=0.0 HA=1 ESP=-1/100 age=1 rev=0 SR=0/0 hint=0
+0	01:14:02.510	2026.04.08 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=31.6 grade=1 chop=0.0 HA=1 ESP=-1/70 age=2 rev=0 SR=0/0 hint=0
+0	01:14:02.855	2026.04.08 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=32.5 grade=1 chop=0.0 HA=1 ESP=-1/70 age=3 rev=0 SR=0/0 hint=0
+0	01:14:03.292	2026.04.08 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=30.8 grade=1 chop=0.0 HA=1 ESP=-1/89 age=4 rev=0 SR=0/0 hint=0
+0	01:14:03.840	2026.04.08 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=-1 score=43.5 grade=1 chop=50.0 HA=1 ESP=-1/100 age=0 rev=-1 SR=0/0 hint=0
+0	01:14:04.230	2026.04.08 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=52.5 grade=2 chop=50.0 HA=1 ESP=-1/99 age=1 rev=0 SR=0/0 hint=2
+0	01:14:04.548	2026.04.08 20:00:00  Supertrend_Promax XAUUSD.m,H1:    [VOL] efisiensi=0.171 | volRel=0.98 | volArah=1.63 | chop=50 | ATR=31.18
+0	01:14:04.548	2026.04.08 20:00:00  Supertrend_Promax XAUUSD.m,H1: [LAHIR] jalur C (flip-HA umur 0bar) SELL 4760.57 | SL 4794.86 TP1 4741.86 TP2 4729.39 | skor 81 kuorum 4/4 | R:R 1:0.91
+0	01:14:04.548	2026.04.08 20:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 2bar panah 999bar] SELL 4760.57 | skor 81 kuorum 4/4 | ST 59 HA 100 ESP 76* SR 5.2
+0	01:14:04.548	2026.04.08 20:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4803.44 (swing+rapat, 1.38xATR) TP1 4741.71 TP2 4726.28 (plafon) | R:R 1:0.80 | kelas 2 chop 50
+0	01:14:04.548	2026.04.08 20:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=0 | SRkuat=25 | ESPtenaga=72 | teregang=1.90xATR | struktur=59
+0	01:14:04.549	2026.04.08 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=58.8 grade=2 chop=50.0 HA=-1 ESP=-1/75 age=2 rev=0 SR=0/0 hint=2
+0	01:14:04.902	2026.04.08 21:00:00  Supertrend_Promax XAUUSD.m,H1:    [VOL] efisiensi=0.088 | volRel=1.02 | volArah=1.53 | chop=50 | ATR=32.85
+0	01:14:04.902	2026.04.08 21:00:00  Supertrend_Promax XAUUSD.m,H1: [LAHIR] jalur B (panah-ESP umur 0bar) SELL 4733.91 | SL 4783.19 TP1 4707.63 TP2 4687.92 | skor 84 kuorum 4/4 | R:R 1:0.93
+0	01:14:04.902	2026.04.08 21:00:00  Supertrend_Promax XAUUSD.m,H1: [TP1] jalur C umur 1 bar | MFE 0.78R
+0	01:14:04.902	2026.04.08 21:00:00  Supertrend_Promax XAUUSD.m,H1: [TP1 TERSENTUH] umur [B] umur 1 bar | MFE 0.62R
+0	01:14:04.902	2026.04.08 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=63.1 grade=2 chop=50.0 HA=-1 ESP=-1/93 age=0 rev=-1 SR=0/0 hint=2
+0	01:14:05.340	2026.04.08 22:00:00  Supertrend_Promax XAUUSD.m,H1: [TP1] jalur B umur 1 bar | MFE 0.58R
+0	01:14:05.340	2026.04.08 22:00:00  Supertrend_Promax XAUUSD.m,H1: [TP2] jalur C umur 2 bar | MFE 1.61R MAE 0.00R | skor-lahir 81 kuorum-lahir 4  <- SUKSES PENUH
+0	01:14:05.340	2026.04.08 22:00:00  Supertrend_Promax XAUUSD.m,H1: [TP2 TERSENTUH] umur [B] umur 2 bar | MFE 1.29R MAE 0.00R  <- SUKSES PENUH
+0	01:14:05.340	2026.04.08 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=73.1 grade=3 chop=50.0 HA=-1 ESP=-1/100 age=1 rev=0 SR=0/0 hint=2
+0	01:14:05.715	2026.04.08 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=74.1 grade=3 chop=50.0 HA=-1 ESP=-1/100 age=2 rev=0 SR=0/0 hint=2
+0	01:14:05.793	2026.04.09 01:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 6bar panah 999bar] SELL 4719.15 | skor 84 kuorum 4/4 | ST 72 HA 86 ESP 83* SR 4.0
+0	01:14:05.793	2026.04.09 01:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4764.82 (ST+rapat, 1.38xATR) TP1 4699.05 TP2 4682.61 (plafon) | R:R 1:0.80 | kelas 3 chop 50
+0	01:14:05.793	2026.04.09 01:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=4 | SRkuat=100 | ESPtenaga=88 | teregang=2.24xATR | struktur=72
+0	01:14:05.793	2026.04.09 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=71.6 grade=3 chop=50.0 HA=-1 ESP=-1/83 age=0 rev=-1 SR=0/0 hint=2
+0	01:14:05.997	2026.04.09 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=75.9 grade=3 chop=50.0 HA=-1 ESP=-1/89 age=1 rev=0 SR=0/0 hint=2
+0	01:14:06.152	2026.04.09 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=73.6 grade=3 chop=50.0 HA=-1 ESP=-1/89 age=2 rev=0 SR=0/0 hint=2
+0	01:14:06.355	2026.04.09 04:00:00  Supertrend_Promax XAUUSD.m,H1: [TP1 TERSENTUH] umur [B] umur 3 bar | MFE 0.27R
+0	01:14:06.355	2026.04.09 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=73.2 grade=3 chop=50.0 HA=-1 ESP=-1/100 age=3 rev=0 SR=0/0 hint=2
+0	01:14:06.714	2026.04.09 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=63.9 grade=2 chop=50.0 HA=-1 ESP=-1/51 age=4 rev=0 SR=0/1 hint=2
+0	01:14:06.933	2026.04.09 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=49.3 grade=1 chop=50.0 HA=-1 ESP=-1/19 age=5 rev=0 SR=0/1 hint=0
+0	01:14:07.089	2026.04.09 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=59.1 grade=2 chop=50.0 HA=-1 ESP=-1/91 age=6 rev=0 SR=1/1 hint=2
+0	01:14:07.182	2026.04.09 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=53.5 grade=2 chop=50.0 HA=-1 ESP=-1/42 age=7 rev=0 SR=1/1 hint=2
+0	01:14:07.385	2026.04.09 09:00:00  Supertrend_Promax XAUUSD.m,H1: [EXP] jalur B umur 11 bar | MFE 0.58R MAE 0.00R | skor-lahir 84 kuorum-lahir 4 | TP1 sempat kena
+0	01:14:07.385	2026.04.09 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=54.9 grade=2 chop=50.0 HA=-1 ESP=-1/72 age=8 rev=0 SR=1/1 hint=2
+0	01:14:07.589	2026.04.09 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=53.7 grade=2 chop=50.0 HA=-1 ESP=-1/99 age=9 rev=0 SR=1/1 hint=2
+0	01:14:07.949	2026.04.09 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=48.2 grade=1 chop=50.0 HA=-1 ESP=-1/22 age=10 rev=0 SR=0/1 hint=0
+0	01:14:08.198	2026.04.09 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=31.9 grade=1 chop=50.0 HA=-1 ESP=-1/59 age=11 rev=0 SR=0/1 hint=0
+0	01:14:08.386	2026.04.09 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=24.9 grade=0 chop=50.0 HA=-1 ESP=-1/45 age=12 rev=0 SR=0/1 hint=0
+0	01:14:08.605	2026.04.09 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=18.5 grade=0 chop=50.0 HA=-1 ESP=-1/48 age=13 rev=0 SR=0/0 hint=0
+0	01:14:08.794	2026.04.09 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=34.7 grade=1 chop=0.0 HA=1 ESP=1/61 age=0 rev=1 SR=0/0 hint=0
+0	01:14:09.112	2026.04.09 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=33.4 grade=1 chop=0.0 HA=1 ESP=1/21 age=1 rev=0 SR=0/0 hint=0
+0	01:14:09.589	2026.04.09 17:00:00  Supertrend_Promax XAUUSD.m,H1:    [VOL] efisiensi=0.017 | volRel=1.79 | volArah=1.16 | chop=50 | ATR=21.19
+0	01:14:09.589	2026.04.09 17:00:00  Supertrend_Promax XAUUSD.m,H1: [LAHIR] jalur A (flip-ST umur 0bar) BUY 4764.55 | SL 4722.18 TP1 4785.74 TP2 4806.92 | skor 69 kuorum 3/4 | R:R 1:1.00
+0	01:14:09.589	2026.04.09 17:00:00  Supertrend_Promax XAUUSD.m,H1:    [VOL] efisiensi=0.017 | volRel=1.79 | volArah=1.16 | chop=50 | ATR=21.19
+0	01:14:09.589	2026.04.09 17:00:00  Supertrend_Promax XAUUSD.m,H1: [LAHIR] jalur B (panah-ESP umur 0bar) BUY 4764.55 | SL 4732.77 TP1 4781.50 TP2 4794.21 | skor 69 kuorum 3/4 | R:R 1:0.93
+0	01:14:09.589	2026.04.09 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=1 score=45.8 grade=1 chop=50.0 HA=1 ESP=1/43 age=0 rev=0 SR=0/0 hint=0
+0	01:14:10.077	2026.04.09 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=46.1 grade=1 chop=50.0 HA=1 ESP=1/34 age=1 rev=0 SR=0/0 hint=0
+0	01:14:10.585	2026.04.09 19:00:00  Supertrend_Promax XAUUSD.m,H1: [TP1] jalur A umur 2 bar | MFE 0.67R
+0	01:14:10.585	2026.04.09 19:00:00  Supertrend_Promax XAUUSD.m,H1: [TP1] jalur B umur 2 bar | MFE 0.89R
+0	01:14:10.585	2026.04.09 19:00:00  Supertrend_Promax XAUUSD.m,H1: [TP2] jalur B umur 2 bar | MFE 0.89R MAE 0.00R | skor-lahir 69 kuorum-lahir 3  <- SUKSES PENUH
+0	01:14:10.586	2026.04.09 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=61.4 grade=2 chop=50.0 HA=1 ESP=1/59 age=2 rev=0 SR=0/0 hint=2
+0	01:14:10.901	2026.04.09 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=66.9 grade=2 chop=50.0 HA=1 ESP=1/48 age=3 rev=0 SR=0/0 hint=2
+0	01:14:11.186	2026.04.09 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=65.2 grade=2 chop=50.0 HA=1 ESP=1/34 age=4 rev=0 SR=0/0 hint=2
+0	01:14:11.519	2026.04.09 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=47.6 grade=1 chop=50.0 HA=1 ESP=1/35 age=5 rev=0 SR=0/0 hint=0
+0	01:14:11.777	2026.04.09 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=43.0 grade=1 chop=50.0 HA=1 ESP=1/61 age=6 rev=0 SR=0/0 hint=0
+0	01:14:11.871	2026.04.10 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=32.4 grade=1 chop=50.0 HA=1 ESP=1/89 age=7 rev=0 SR=0/0 hint=0
+0	01:14:12.013	2026.04.10 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=29.0 grade=0 chop=50.0 HA=1 ESP=1/73 age=8 rev=0 SR=0/0 hint=0
+0	01:14:12.099	2026.04.10 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=24.3 grade=0 chop=50.0 HA=1 ESP=1/95 age=9 rev=0 SR=0/0 hint=0
+0	01:14:12.246	2026.04.10 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=18.5 grade=0 chop=50.0 HA=-1 ESP=1/100 age=10 rev=0 SR=0/0 hint=0
+0	01:14:12.511	2026.04.10 05:00:00  Supertrend_Promax XAUUSD.m,H1: [EXP] jalur A umur 11 bar | MFE 0.79R MAE -0.04R | skor-lahir 69 kuorum-lahir 3 | TP1 sempat kena
+0	01:14:12.511	2026.04.10 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=17.4 grade=0 chop=50.0 HA=-1 ESP=1/35 age=11 rev=0 SR=0/0 hint=0
+0	01:14:12.792	2026.04.10 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=14.1 grade=0 chop=50.0 HA=-1 ESP=1/100 age=12 rev=0 SR=0/0 hint=0
+0	01:14:12.996	2026.04.10 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=6.8 grade=0 chop=50.0 HA=-1 ESP=1/40 age=13 rev=0 SR=0/0 hint=0
+0	01:14:13.104	2026.04.10 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=4.2 grade=0 chop=50.0 HA=-1 ESP=1/33 age=14 rev=0 SR=0/0 hint=0
+0	01:14:13.246	2026.04.10 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=6.8 grade=0 chop=50.0 HA=-1 ESP=1/12 age=15 rev=0 SR=0/0 hint=0
+0	01:14:13.558	2026.04.10 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=9.1 grade=0 chop=50.0 HA=-1 ESP=1/100 age=16 rev=0 SR=1/0 hint=0
+0	01:14:13.746	2026.04.10 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=19.5 grade=0 chop=50.0 HA=-1 ESP=1/100 age=17 rev=0 SR=1/0 hint=0
+0	01:14:13.980	2026.04.10 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=-1 score=32.1 grade=1 chop=100.0 HA=-1 ESP=-1/100 age=0 rev=-1 SR=1/0 hint=0
+0	01:14:14.183	2026.04.10 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=22.2 grade=0 chop=100.0 HA=-1 ESP=-1/69 age=1 rev=0 SR=1/0 hint=0
+0	01:14:14.402	2026.04.10 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=38.1 grade=1 chop=50.0 HA=-1 ESP=-1/45 age=2 rev=0 SR=0/0 hint=0
+0	01:14:14.528	2026.04.10 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=18.7 grade=0 chop=50.0 HA=-1 ESP=-1/59 age=3 rev=0 SR=0/0 hint=0
+0	01:14:14.871	2026.04.10 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=17.4 grade=0 chop=50.0 HA=-1 ESP=-1/49 age=4 rev=0 SR=0/0 hint=0
+0	01:14:15.246	2026.04.10 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=17.0 grade=0 chop=50.0 HA=1 ESP=-1/26 age=5 rev=0 SR=0/0 hint=0
+0	01:14:15.730	2026.04.10 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=27.0 grade=0 chop=50.0 HA=1 ESP=1/39 age=0 rev=0 SR=0/0 hint=0
+0	01:14:16.124	2026.04.10 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=27.3 grade=0 chop=50.0 HA=1 ESP=1/48 age=1 rev=0 SR=0/0 hint=0
+0	01:14:16.437	2026.04.10 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=4.6 grade=0 chop=50.0 HA=1 ESP=1/100 age=2 rev=0 SR=0/0 hint=0
+0	01:14:16.683	2026.04.10 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=3.6 grade=0 chop=50.0 HA=1 ESP=1/97 age=3 rev=0 SR=0/0 hint=0
+0	01:14:16.901	2026.04.10 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=0.0 grade=0 chop=50.0 HA=1 ESP=1/82 age=4 rev=0 SR=0/0 hint=0
+0	01:14:17.137	2026.04.10 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=0.0 grade=0 chop=50.0 HA=1 ESP=1/82 age=5 rev=0 SR=0/0 hint=0
+0	01:14:17.260	2026.04.13 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=16.7 grade=0 chop=50.0 HA=1 ESP=1/100 age=6 rev=0 SR=1/0 hint=0
+0	01:14:17.588	2026.04.13 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=41.7 grade=1 chop=50.0 HA=1 ESP=1/100 age=7 rev=0 SR=0/0 hint=0
+0	01:14:17.762	2026.04.13 03:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 14bar panah 999bar] SELL 4671.46 | skor 67 kuorum 3/4 | ST 53 HA 42 ESP LWN SR bebas
+0	01:14:17.762	2026.04.13 03:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4711.13 (ST+rapat, 1.38xATR) TP1 4654.01 TP2 4639.72 (plafon) | R:R 1:0.80 | kelas 2 chop 50
+0	01:14:17.762	2026.04.13 03:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=0 | SRkuat=50 | ESPtenaga=61 | teregang=1.82xATR | struktur=53
+0	01:14:17.762	2026.04.13 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=52.5 grade=2 chop=50.0 HA=-1 ESP=1/100 age=8 rev=0 SR=0/0 hint=2
+0	01:14:17.980	2026.04.13 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=40.6 grade=1 chop=50.0 HA=-1 ESP=1/80 age=9 rev=0 SR=0/0 hint=0
+0	01:14:18.309	2026.04.13 05:00:00  Supertrend_Promax XAUUSD.m,H1: [SL TERSENTUH] umur [B] umur 2 bar | MFE 0.00R MAE -1.26R | TP1 TIDAK kena
+0	01:14:18.309	2026.04.13 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=30.7 grade=1 chop=50.0 HA=-1 ESP=1/49 age=10 rev=0 SR=0/0 hint=0
+0	01:14:18.520	2026.04.13 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=23.9 grade=0 chop=50.0 HA=-1 ESP=1/29 age=11 rev=0 SR=0/0 hint=0
+0	01:14:18.719	2026.04.13 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=22.1 grade=0 chop=50.0 HA=-1 ESP=1/16 age=12 rev=0 SR=0/0 hint=0
+0	01:14:18.852	2026.04.13 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=16.5 grade=0 chop=50.0 HA=-1 ESP=1/14 age=13 rev=0 SR=0/1 hint=0
+0	01:14:19.026	2026.04.13 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=1 score=0.0 grade=0 chop=50.0 HA=-1 ESP=1/20 age=0 rev=0 SR=0/0 hint=0
+0	01:14:19.293	2026.04.13 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=7.8 grade=0 chop=50.0 HA=-1 ESP=1/33 age=1 rev=0 SR=0/1 hint=0
+0	01:14:19.480	2026.04.13 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=26.2 grade=0 chop=50.0 HA=1 ESP=1/50 age=2 rev=0 SR=0/0 hint=0
+0	01:14:19.716	2026.04.13 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=26.4 grade=0 chop=50.0 HA=1 ESP=1/35 age=3 rev=0 SR=0/1 hint=0
+0	01:14:19.918	2026.04.13 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=21.2 grade=0 chop=50.0 HA=1 ESP=1/100 age=4 rev=0 SR=0/1 hint=0
+0	01:14:20.089	2026.04.13 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=16.6 grade=0 chop=50.0 HA=1 ESP=1/100 age=5 rev=0 SR=0/1 hint=0
+0	01:14:20.324	2026.04.13 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=16.0 grade=0 chop=50.0 HA=1 ESP=1/100 age=6 rev=0 SR=0/0 hint=0
+0	01:14:20.574	2026.04.13 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=17.9 grade=0 chop=50.0 HA=1 ESP=1/97 age=7 rev=0 SR=0/1 hint=0
+0	01:14:21.041	2026.04.13 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=30.9 grade=1 chop=50.0 HA=1 ESP=1/63 age=8 rev=0 SR=0/1 hint=0
+0	01:14:21.524	2026.04.13 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=13.0 grade=0 chop=50.0 HA=1 ESP=1/61 age=9 rev=0 SR=0/0 hint=0
+0	01:14:21.996	2026.04.13 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=10.8 grade=0 chop=50.0 HA=1 ESP=1/100 age=10 rev=0 SR=0/0 hint=0
+0	01:14:22.434	2026.04.13 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=12.8 grade=0 chop=50.0 HA=1 ESP=1/34 age=11 rev=0 SR=0/1 hint=0
+0	01:14:22.746	2026.04.13 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=12.9 grade=0 chop=50.0 HA=1 ESP=1/39 age=12 rev=0 SR=0/1 hint=0
+0	01:14:22.933	2026.04.13 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=14.2 grade=0 chop=50.0 HA=1 ESP=1/13 age=13 rev=0 SR=0/1 hint=0
+0	01:14:23.206	2026.04.13 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=22.6 grade=0 chop=50.0 HA=1 ESP=1/40 age=14 rev=0 SR=0/1 hint=0
+0	01:14:23.293	2026.04.14 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=23.9 grade=0 chop=50.0 HA=1 ESP=1/30 age=15 rev=0 SR=0/1 hint=0
+0	01:14:23.401	2026.04.14 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=42.8 grade=1 chop=50.0 HA=1 ESP=1/83 age=0 rev=1 SR=0/0 hint=0
+0	01:14:23.543	2026.04.14 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=49.9 grade=1 chop=50.0 HA=1 ESP=1/69 age=1 rev=0 SR=0/0 hint=0
+0	01:14:23.753	2026.04.14 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=55.7 grade=2 chop=50.0 HA=1 ESP=1/65 age=2 rev=0 SR=0/0 hint=2
+0	01:14:23.996	2026.04.14 05:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 19bar panah 999bar] BUY 4765.05 | skor 71 kuorum 4/4 | ST 60 HA 44 ESP 53* SR bebas
+0	01:14:23.996	2026.04.14 05:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4739.10 (ST+rapat, 1.38xATR) TP1 4776.47 TP2 4785.81 (plafon) | R:R 1:0.80 | kelas 2 chop 50
+0	01:14:23.996	2026.04.14 05:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=17 | SRkuat=100 | ESPtenaga=74 | teregang=2.04xATR | struktur=60
+0	01:14:24.012	2026.04.14 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=60.4 grade=2 chop=50.0 HA=1 ESP=1/53 age=0 rev=0 SR=0/0 hint=2
+0	01:14:24.207	2026.04.14 06:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL DICABUT] umur [B] umur 1 bar | sebab: VETO-ESP | skor 64 kuorum 3/4 | MFE 0.00R MAE -0.00R
+0	01:14:24.208	2026.04.14 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=77.7 grade=3 chop=0.0 HA=1 ESP=1/44 age=1 rev=0 SR=0/0 hint=2
+0	01:14:24.370	2026.04.14 07:00:00  Supertrend_Promax XAUUSD.m,H1:    [VOL] efisiensi=0.241 | volRel=0.54 | volArah=0.95 | chop=0 | ATR=15.72
+0	01:14:24.370	2026.04.14 07:00:00  Supertrend_Promax XAUUSD.m,H1: [LAHIR] jalur B (panah-ESP umur 0bar) BUY 4767.91 | SL 4744.33 TP1 4780.49 TP2 4789.92 | skor 76 kuorum 4/4 | R:R 1:0.93
+0	01:14:24.370	2026.04.14 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=74.2 grade=3 chop=0.0 HA=1 ESP=1/44 age=0 rev=0 SR=0/0 hint=2
+0	01:14:24.433	2026.04.14 08:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 22bar panah 999bar] BUY 4774.29 | skor 76 kuorum 4/4 | ST 78 HA 57 ESP 36* SR bebas
+0	01:14:24.433	2026.04.14 08:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4754.71 (ST+rapat, 1.38xATR) TP1 4782.91 TP2 4789.96 (plafon) | R:R 1:0.80 | kelas 3 chop 0
+0	01:14:24.433	2026.04.14 08:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=20 | SRkuat=100 | ESPtenaga=67 | teregang=2.44xATR | struktur=78
+0	01:14:24.433	2026.04.14 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=77.7 grade=3 chop=0.0 HA=1 ESP=1/36 age=1 rev=0 SR=0/0 hint=2
+0	01:14:24.631	2026.04.14 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=63.7 grade=2 chop=0.0 HA=1 ESP=1/70 age=2 rev=0 SR=0/0 hint=2
+0	01:14:24.809	2026.04.14 10:00:00  Supertrend_Promax XAUUSD.m,H1: [TP1] jalur B umur 3 bar | MFE 0.60R
+0	01:14:24.809	2026.04.14 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=56.3 grade=2 chop=0.0 HA=1 ESP=1/32 age=3 rev=0 SR=0/0 hint=2
+0	01:14:25.105	2026.04.14 11:00:00  Supertrend_Promax XAUUSD.m,H1: [TP2] jalur B umur 4 bar | MFE 0.60R MAE -0.34R | skor-lahir 76 kuorum-lahir 4  <- SUKSES PENUH
+0	01:14:25.105	2026.04.14 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=68.0 grade=2 chop=0.0 HA=1 ESP=1/55 age=0 rev=0 SR=0/1 hint=2
+0	01:14:25.324	2026.04.14 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=71.4 grade=3 chop=0.0 HA=1 ESP=1/41 age=1 rev=0 SR=0/0 hint=2
+0	01:14:25.480	2026.04.14 13:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 27bar panah 999bar] BUY 4778.41 | skor 72 kuorum 3/4 | ST 68 HA 69 ESP 29? SR bebas
+0	01:14:25.480	2026.04.14 13:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4754.33 (swing+rapat, 1.37xATR) TP1 4789.01 TP2 4797.68 (plafon) | R:R 1:0.80 | kelas 2 chop 0
+0	01:14:25.480	2026.04.14 13:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=25 | SRkuat=100 | ESPtenaga=80 | teregang=1.97xATR | struktur=68
+0	01:14:25.496	2026.04.14 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=68.3 grade=2 chop=0.0 HA=1 ESP=1/28 age=2 rev=0 SR=0/0 hint=2
+0	01:14:25.683	2026.04.14 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=52.8 grade=2 chop=0.0 HA=1 ESP=1/61 age=3 rev=0 SR=0/0 hint=2
+0	01:14:25.902	2026.04.14 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=47.5 grade=1 chop=0.0 HA=1 ESP=1/50 age=4 rev=0 SR=0/0 hint=0
+0	01:14:26.152	2026.04.14 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=31.0 grade=1 chop=0.0 HA=1 ESP=1/78 age=5 rev=0 SR=0/0 hint=0
+0	01:14:26.608	2026.04.14 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=40.3 grade=1 chop=0.0 HA=1 ESP=1/42 age=6 rev=0 SR=0/1 hint=0
+0	01:14:26.996	2026.04.14 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=46.4 grade=1 chop=0.0 HA=1 ESP=1/67 age=7 rev=0 SR=0/0 hint=0
+0	01:14:27.355	2026.04.14 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=51.3 grade=2 chop=0.0 HA=1 ESP=1/36 age=8 rev=0 SR=0/0 hint=2
+0	01:14:27.621	2026.04.14 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=58.1 grade=2 chop=0.0 HA=1 ESP=1/38 age=9 rev=0 SR=0/0 hint=2
+0	01:14:27.886	2026.04.14 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=73.9 grade=3 chop=0.0 HA=1 ESP=1/64 age=10 rev=0 SR=0/0 hint=2
+0	01:14:28.135	2026.04.14 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=75.7 grade=3 chop=0.0 HA=1 ESP=1/57 age=11 rev=0 SR=0/0 hint=2
+0	01:14:28.386	2026.04.14 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=79.2 grade=3 chop=0.0 HA=1 ESP=1/50 age=12 rev=0 SR=0/0 hint=2
+0	01:14:28.480	2026.04.15 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=77.9 grade=3 chop=0.0 HA=1 ESP=1/38 age=13 rev=0 SR=0/0 hint=2
+0	01:14:28.636	2026.04.15 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=68.4 grade=2 chop=0.0 HA=1 ESP=1/27 age=14 rev=0 SR=0/0 hint=2
+0	01:14:28.777	2026.04.15 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=57.4 grade=2 chop=0.0 HA=1 ESP=1/39 age=15 rev=0 SR=0/0 hint=2
+0	01:14:28.934	2026.04.15 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=43.0 grade=1 chop=0.0 HA=1 ESP=1/74 age=16 rev=0 SR=0/0 hint=0
+0	01:14:29.277	2026.04.15 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=49.7 grade=1 chop=0.0 HA=1 ESP=1/60 age=17 rev=0 SR=0/1 hint=0
+0	01:14:29.574	2026.04.15 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=45.0 grade=1 chop=0.0 HA=1 ESP=1/100 age=18 rev=0 SR=0/0 hint=0
+0	01:14:29.698	2026.04.15 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=36.5 grade=1 chop=0.0 HA=1 ESP=1/100 age=19 rev=0 SR=0/0 hint=0
+0	01:14:29.823	2026.04.15 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=33.7 grade=1 chop=0.0 HA=1 ESP=1/100 age=20 rev=0 SR=0/0 hint=0
+0	01:14:30.042	2026.04.15 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=29.3 grade=0 chop=0.0 HA=-1 ESP=-1/100 age=0 rev=-1 SR=0/0 hint=0
+0	01:14:30.277	2026.04.15 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=25.5 grade=0 chop=0.0 HA=-1 ESP=-1/100 age=1 rev=0 SR=0/0 hint=0
+0	01:14:30.550	2026.04.15 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=4.8 grade=0 chop=0.0 HA=-1 ESP=-1/100 age=2 rev=0 SR=0/0 hint=0
+0	01:14:30.764	2026.04.15 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=9.9 grade=0 chop=0.0 HA=-1 ESP=-1/76 age=3 rev=0 SR=0/1 hint=0
+0	01:14:30.989	2026.04.15 13:00:00  Supertrend_Promax XAUUSD.m,H1:    [VOL] efisiensi=0.163 | volRel=1.15 | volArah=1.11 | chop=50 | ATR=20.30
+0	01:14:30.989	2026.04.15 13:00:00  Supertrend_Promax XAUUSD.m,H1: [LAHIR] jalur A (flip-ST umur 0bar) SELL 4798.18 | SL 4838.78 TP1 4777.88 TP2 4757.58 | skor 78 kuorum 3/4 | R:R 1:1.00
+0	01:14:30.989	2026.04.15 13:00:00  Supertrend_Promax XAUUSD.m,H1:    [VOL] efisiensi=0.163 | volRel=1.15 | volArah=1.11 | chop=50 | ATR=20.30
+0	01:14:30.989	2026.04.15 13:00:00  Supertrend_Promax XAUUSD.m,H1: [LAHIR] jalur B (panah-ESP umur 0bar) SELL 4798.18 | SL 4828.63 TP1 4781.94 TP2 4769.76 | skor 78 kuorum 3/4 | R:R 1:0.93
+0	01:14:30.990	2026.04.15 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=-1 score=49.6 grade=1 chop=50.0 HA=-1 ESP=-1/100 age=0 rev=-1 SR=0/0 hint=0
+0	01:14:31.214	2026.04.15 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=46.8 grade=1 chop=50.0 HA=-1 ESP=-1/100 age=1 rev=0 SR=0/0 hint=0
+0	01:14:31.447	2026.04.15 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=25.5 grade=0 chop=50.0 HA=-1 ESP=-1/49 age=2 rev=0 SR=0/1 hint=0
+0	01:14:31.714	2026.04.15 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=16.9 grade=0 chop=50.0 HA=-1 ESP=-1/14 age=3 rev=0 SR=0/0 hint=0
+0	01:14:32.105	2026.04.15 17:00:00  Supertrend_Promax XAUUSD.m,H1: [SL ] jalur B umur 4 bar | MFE 0.00R MAE -1.01R | skor-lahir 78 kuorum-lahir 3 | TP1 TIDAK kena
+0	01:14:32.105	2026.04.15 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=16.2 grade=0 chop=50.0 HA=-1 ESP=-1/43 age=4 rev=0 SR=0/1 hint=0
+0	01:14:32.605	2026.04.15 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=17.2 grade=0 chop=50.0 HA=-1 ESP=-1/16 age=5 rev=0 SR=0/1 hint=0
+0	01:14:32.995	2026.04.15 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=23.3 grade=0 chop=50.0 HA=-1 ESP=-1/94 age=6 rev=0 SR=1/0 hint=0
+0	01:14:33.229	2026.04.15 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=17.5 grade=0 chop=50.0 HA=-1 ESP=-1/87 age=7 rev=0 SR=0/0 hint=0
+0	01:14:33.636	2026.04.15 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=26.8 grade=0 chop=50.0 HA=-1 ESP=-1/100 age=8 rev=0 SR=1/0 hint=0
+0	01:14:33.996	2026.04.15 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=32.3 grade=1 chop=50.0 HA=-1 ESP=-1/95 age=9 rev=0 SR=1/0 hint=0
+0	01:14:34.168	2026.04.15 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=30.4 grade=1 chop=50.0 HA=-1 ESP=-1/83 age=10 rev=0 SR=1/0 hint=0
+0	01:14:34.269	2026.04.16 01:00:00  Supertrend_Promax XAUUSD.m,H1: [EXP] jalur A umur 11 bar | MFE 0.18R MAE -0.76R | skor-lahir 78 kuorum-lahir 3 | TP1 TIDAK kena
+0	01:14:34.270	2026.04.16 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=43.9 grade=1 chop=50.0 HA=-1 ESP=-1/100 age=0 rev=-1 SR=1/0 hint=0
+0	01:14:34.418	2026.04.16 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=29.3 grade=0 chop=50.0 HA=-1 ESP=-1/10 age=1 rev=0 SR=0/0 hint=0
+0	01:14:34.541	2026.04.16 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=18.7 grade=0 chop=50.0 HA=-1 ESP=-1/71 age=2 rev=0 SR=0/1 hint=0
+0	01:14:34.730	2026.04.16 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=1 score=15.3 grade=0 chop=100.0 HA=-1 ESP=1/61 age=0 rev=1 SR=0/0 hint=0
+0	01:14:35.027	2026.04.16 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=8.8 grade=0 chop=100.0 HA=1 ESP=1/23 age=1 rev=0 SR=0/1 hint=0
+0	01:14:35.230	2026.04.16 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=19.4 grade=0 chop=100.0 HA=1 ESP=1/36 age=2 rev=0 SR=0/1 hint=0
+0	01:14:35.379	2026.04.16 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=21.2 grade=0 chop=100.0 HA=1 ESP=1/32 age=3 rev=0 SR=0/1 hint=0
+0	01:14:35.480	2026.04.16 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=34.8 grade=1 chop=100.0 HA=1 ESP=1/44 age=0 rev=0 SR=0/1 hint=0
+0	01:14:35.652	2026.04.16 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=45.1 grade=1 chop=100.0 HA=1 ESP=1/57 age=1 rev=0 SR=0/0 hint=0
+0	01:14:36.016	2026.04.16 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=49.3 grade=1 chop=50.0 HA=1 ESP=1/56 age=2 rev=0 SR=0/1 hint=0
+0	01:14:36.243	2026.04.16 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=44.4 grade=1 chop=50.0 HA=1 ESP=1/66 age=3 rev=0 SR=0/0 hint=0
+0	01:14:36.434	2026.04.16 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=26.4 grade=0 chop=50.0 HA=1 ESP=1/100 age=4 rev=0 SR=0/0 hint=0
+0	01:14:36.637	2026.04.16 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=20.4 grade=0 chop=50.0 HA=1 ESP=1/100 age=5 rev=0 SR=0/0 hint=0
+0	01:14:36.878	2026.04.16 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=17.4 grade=0 chop=50.0 HA=-1 ESP=1/84 age=6 rev=0 SR=0/0 hint=0
+0	01:14:37.012	2026.04.16 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=26.0 grade=0 chop=50.0 HA=-1 ESP=1/36 age=7 rev=0 SR=0/0 hint=0
+0	01:14:37.261	2026.04.16 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=17.8 grade=0 chop=50.0 HA=-1 ESP=1/45 age=8 rev=0 SR=0/0 hint=0
+0	01:14:37.636	2026.04.16 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=-1 score=0.0 grade=0 chop=100.0 HA=-1 ESP=1/100 age=9 rev=0 SR=1/0 hint=0
+0	01:14:38.202	2026.04.16 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=0.0 grade=0 chop=100.0 HA=-1 ESP=1/100 age=10 rev=0 SR=1/0 hint=0
+0	01:14:38.605	2026.04.16 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=11.3 grade=0 chop=100.0 HA=-1 ESP=1/70 age=11 rev=0 SR=0/0 hint=0
+0	01:14:38.949	2026.04.16 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=24.0 grade=0 chop=100.0 HA=-1 ESP=1/88 age=12 rev=0 SR=1/0 hint=0
+0	01:14:39.371	2026.04.16 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=27.0 grade=0 chop=100.0 HA=-1 ESP=1/100 age=13 rev=0 SR=1/0 hint=0
+0	01:14:39.699	2026.04.16 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=26.0 grade=0 chop=100.0 HA=-1 ESP=1/83 age=14 rev=0 SR=0/0 hint=0
+0	01:14:39.949	2026.04.16 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=0.6 grade=0 chop=100.0 HA=-1 ESP=1/40 age=15 rev=0 SR=0/0 hint=0
+0	01:14:40.027	2026.04.17 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=15.1 grade=0 chop=50.0 HA=-1 ESP=1/94 age=16 rev=0 SR=0/0 hint=0
+0	01:14:40.152	2026.04.17 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=3.9 grade=0 chop=50.0 HA=-1 ESP=1/12 age=17 rev=0 SR=0/0 hint=0
+0	01:14:40.245	2026.04.17 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=2.6 grade=0 chop=50.0 HA=-1 ESP=1/18 age=18 rev=0 SR=0/1 hint=0
+0	01:14:40.399	2026.04.17 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=5.3 grade=0 chop=50.0 HA=-1 ESP=1/32 age=19 rev=0 SR=0/1 hint=0
+0	01:14:40.723	2026.04.17 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=19.6 grade=0 chop=50.0 HA=-1 ESP=1/100 age=20 rev=0 SR=0/1 hint=0
+0	01:14:40.935	2026.04.17 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=11.2 grade=0 chop=50.0 HA=-1 ESP=1/92 age=21 rev=0 SR=1/1 hint=0
+0	01:14:41.051	2026.04.17 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=27.3 grade=0 chop=50.0 HA=-1 ESP=1/45 age=22 rev=0 SR=0/1 hint=0
+0	01:14:41.167	2026.04.17 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=12.1 grade=0 chop=50.0 HA=-1 ESP=1/42 age=23 rev=0 SR=0/0 hint=0
+0	01:14:41.355	2026.04.17 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=9.2 grade=0 chop=50.0 HA=-1 ESP=1/10 age=24 rev=0 SR=0/1 hint=0
+0	01:14:41.621	2026.04.17 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=19.5 grade=0 chop=50.0 HA=-1 ESP=1/100 age=25 rev=0 SR=0/0 hint=0
+0	01:14:41.839	2026.04.17 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=24.4 grade=0 chop=50.0 HA=-1 ESP=1/100 age=26 rev=0 SR=0/0 hint=0
+0	01:14:42.012	2026.04.17 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=23.2 grade=0 chop=50.0 HA=-1 ESP=1/68 age=27 rev=0 SR=0/1 hint=0
+0	01:14:42.198	2026.04.17 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=0.0 grade=0 chop=50.0 HA=-1 ESP=1/37 age=28 rev=0 SR=0/0 hint=0
+0	01:14:42.387	2026.04.17 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=10.7 grade=0 chop=0.0 HA=-1 ESP=1/98 age=29 rev=0 SR=0/0 hint=0
+0	01:14:42.635	2026.04.17 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=0.0 grade=0 chop=0.0 HA=-1 ESP=1/53 age=30 rev=0 SR=0/1 hint=0
+0	01:14:43.089	2026.04.17 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=1 score=23.3 grade=0 chop=50.0 HA=-1 ESP=1/100 age=31 rev=0 SR=0/0 hint=0
+0	01:14:43.714	2026.04.17 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=41.1 grade=1 chop=50.0 HA=1 ESP=1/90 age=32 rev=0 SR=0/0 hint=0
+0	01:14:44.183	2026.04.17 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=50.9 grade=2 chop=50.0 HA=1 ESP=1/55 age=33 rev=0 SR=0/0 hint=2
+0	01:14:44.621	2026.04.17 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=47.5 grade=1 chop=50.0 HA=1 ESP=1/26 age=34 rev=0 SR=0/0 hint=0
+0	01:14:44.887	2026.04.17 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=44.0 grade=1 chop=50.0 HA=1 ESP=1/25 age=35 rev=0 SR=0/0 hint=0
+0	01:14:45.214	2026.04.17 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=19.7 grade=0 chop=50.0 HA=1 ESP=1/27 age=36 rev=0 SR=0/0 hint=0
+0	01:14:45.451	2026.04.17 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=9.8 grade=0 chop=50.0 HA=1 ESP=1/88 age=37 rev=0 SR=0/0 hint=0
+0	01:14:45.714	2026.04.17 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=8.7 grade=0 chop=50.0 HA=1 ESP=1/95 age=38 rev=0 SR=0/0 hint=0
+0	01:14:45.885	2026.04.20 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=17.6 grade=0 chop=50.0 HA=1 ESP=-1/100 age=0 rev=-1 SR=1/0 hint=0
+0	01:14:46.152	2026.04.20 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=-1 score=21.4 grade=0 chop=100.0 HA=1 ESP=-1/100 age=0 rev=0 SR=1/0 hint=0
+0	01:14:46.433	2026.04.20 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=30.8 grade=1 chop=100.0 HA=-1 ESP=-1/100 age=1 rev=0 SR=0/0 hint=0
+0	01:14:46.740	2026.04.20 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=37.1 grade=1 chop=100.0 HA=-1 ESP=-1/100 age=0 rev=0 SR=0/0 hint=0
+0	01:14:47.074	2026.04.20 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=41.3 grade=1 chop=100.0 HA=-1 ESP=-1/51 age=1 rev=0 SR=0/0 hint=0
+0	01:14:47.292	2026.04.20 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=28.8 grade=0 chop=100.0 HA=-1 ESP=-1/39 age=2 rev=0 SR=0/0 hint=0
+0	01:14:47.456	2026.04.20 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=37.7 grade=1 chop=100.0 HA=-1 ESP=-1/46 age=3 rev=0 SR=0/0 hint=0
+0	01:14:47.573	2026.04.20 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=40.5 grade=1 chop=100.0 HA=-1 ESP=-1/55 age=0 rev=-1 SR=0/0 hint=0
+0	01:14:47.838	2026.04.20 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=48.4 grade=1 chop=100.0 HA=-1 ESP=-1/76 age=1 rev=0 SR=0/0 hint=0
+0	01:14:48.165	2026.04.20 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=44.9 grade=1 chop=100.0 HA=-1 ESP=-1/79 age=2 rev=0 SR=0/1 hint=0
+0	01:14:48.504	2026.04.20 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=18.8 grade=0 chop=100.0 HA=-1 ESP=-1/36 age=3 rev=0 SR=0/0 hint=0
+0	01:14:48.745	2026.04.20 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=10.2 grade=0 chop=100.0 HA=-1 ESP=-1/29 age=4 rev=0 SR=0/1 hint=0
+0	01:14:48.980	2026.04.20 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=24.4 grade=0 chop=50.0 HA=-1 ESP=-1/77 age=5 rev=0 SR=0/0 hint=0
+0	01:14:49.168	2026.04.20 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=19.2 grade=0 chop=50.0 HA=-1 ESP=-1/35 age=6 rev=0 SR=0/1 hint=0
+0	01:14:49.460	2026.04.20 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=16.6 grade=0 chop=50.0 HA=-1 ESP=-1/74 age=7 rev=0 SR=0/1 hint=0
+0	01:14:49.746	2026.04.20 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=16.3 grade=0 chop=50.0 HA=-1 ESP=-1/50 age=8 rev=0 SR=0/1 hint=0
+0	01:14:50.168	2026.04.20 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=15.5 grade=0 chop=50.0 HA=-1 ESP=-1/40 age=9 rev=0 SR=0/0 hint=0
+0	01:14:50.651	2026.04.20 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=17.3 grade=0 chop=50.0 HA=1 ESP=-1/27 age=10 rev=0 SR=0/1 hint=0
+0	01:14:51.058	2026.04.20 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=17.1 grade=0 chop=50.0 HA=1 ESP=-1/70 age=11 rev=0 SR=0/1 hint=0
+0	01:14:51.307	2026.04.20 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=0.0 grade=0 chop=50.0 HA=1 ESP=-1/75 age=12 rev=0 SR=0/1 hint=0
+0	01:14:51.574	2026.04.20 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=0.0 grade=0 chop=50.0 HA=1 ESP=-1/56 age=13 rev=0 SR=0/0 hint=0
+0	01:14:51.731	2026.04.20 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=23.4 grade=0 chop=0.0 HA=1 ESP=-1/43 age=14 rev=0 SR=0/1 hint=0
+0	01:14:51.918	2026.04.20 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=23.8 grade=0 chop=0.0 HA=1 ESP=-1/51 age=15 rev=0 SR=0/1 hint=0
+0	01:14:52.027	2026.04.21 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=27.8 grade=0 chop=0.0 HA=1 ESP=-1/41 age=16 rev=0 SR=0/1 hint=0
+0	01:14:52.207	2026.04.21 02:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 0bar panah 999bar] BUY 4827.81 | skor 64 kuorum 3/4 | ST 77 HA 36 ESP 64* SR 0.5?
+0	01:14:52.207	2026.04.21 02:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4804.55 (swing+rapat, 1.37xATR) TP1 4838.04 TP2 4846.42 (plafon) | R:R 1:0.80 | kelas 3 chop 50
+0	01:14:52.207	2026.04.21 02:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=YA(0bar) | HAumur=7 | SRkuat=100 | ESPtenaga=100 | teregang=2.43xATR | struktur=77
+0	01:14:52.207	2026.04.21 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=1 score=76.6 grade=3 chop=50.0 HA=1 ESP=1/63 age=0 rev=1 SR=0/1 hint=2
+0	01:14:52.312	2026.04.21 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=75.7 grade=3 chop=50.0 HA=1 ESP=1/52 age=1 rev=0 SR=0/1 hint=2
+0	01:14:52.547	2026.04.21 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=70.3 grade=3 chop=50.0 HA=1 ESP=1/44 age=2 rev=0 SR=0/1 hint=2
+0	01:14:52.793	2026.04.21 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=58.2 grade=2 chop=50.0 HA=1 ESP=1/68 age=3 rev=0 SR=0/0 hint=2
+0	01:14:53.011	2026.04.21 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=44.8 grade=1 chop=50.0 HA=1 ESP=1/82 age=4 rev=0 SR=0/0 hint=0
+0	01:14:53.230	2026.04.21 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=40.7 grade=1 chop=50.0 HA=1 ESP=1/98 age=5 rev=0 SR=0/0 hint=0
+0	01:14:53.356	2026.04.21 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=-1 score=5.6 grade=0 chop=100.0 HA=-1 ESP=-1/100 age=0 rev=-1 SR=0/0 hint=0
+0	01:14:53.564	2026.04.21 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=11.8 grade=0 chop=100.0 HA=-1 ESP=-1/100 age=1 rev=0 SR=0/0 hint=0
+0	01:14:53.886	2026.04.21 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=27.5 grade=0 chop=100.0 HA=-1 ESP=-1/100 age=2 rev=0 SR=0/0 hint=0
+0	01:14:54.137	2026.04.21 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=32.5 grade=1 chop=100.0 HA=-1 ESP=-1/96 age=3 rev=0 SR=0/0 hint=0
+0	01:14:54.339	2026.04.21 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=31.1 grade=1 chop=100.0 HA=-1 ESP=-1/81 age=4 rev=0 SR=0/0 hint=0
+0	01:14:54.495	2026.04.21 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=46.8 grade=1 chop=100.0 HA=-1 ESP=-1/69 age=5 rev=0 SR=0/0 hint=0
+0	01:14:54.637	2026.04.21 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=51.3 grade=2 chop=100.0 HA=-1 ESP=-1/37 age=6 rev=0 SR=0/0 hint=2
+0	01:14:54.855	2026.04.21 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=35.3 grade=1 chop=100.0 HA=-1 ESP=-1/18 age=7 rev=0 SR=0/0 hint=0
+0	01:14:55.179	2026.04.21 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=37.5 grade=1 chop=100.0 HA=-1 ESP=-1/100 age=8 rev=0 SR=1/1 hint=0
+0	01:14:55.652	2026.04.21 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=25.5 grade=0 chop=100.0 HA=-1 ESP=-1/100 age=9 rev=0 SR=1/1 hint=0
+0	01:14:56.168	2026.04.21 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=37.9 grade=1 chop=100.0 HA=-1 ESP=-1/100 age=10 rev=0 SR=0/0 hint=0
+0	01:14:56.621	2026.04.21 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=41.4 grade=1 chop=100.0 HA=-1 ESP=-1/100 age=11 rev=0 SR=0/0 hint=0
+0	01:14:56.996	2026.04.21 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=47.7 grade=1 chop=100.0 HA=-1 ESP=-1/100 age=12 rev=0 SR=0/0 hint=0
+0	01:14:57.418	2026.04.21 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=52.7 grade=2 chop=100.0 HA=-1 ESP=-1/100 age=13 rev=0 SR=0/0 hint=2
+0	01:14:57.813	2026.04.21 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=65.0 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=14 rev=0 SR=0/0 hint=2
+0	01:14:58.234	2026.04.21 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=63.4 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=15 rev=0 SR=0/0 hint=2
+0	01:14:58.605	2026.04.22 01:00:00  Supertrend_Promax XAUUSD.m,H1:    [VOL] efisiensi=0.460 | volRel=1.11 | volArah=0.99 | chop=50 | ATR=35.84
+0	01:14:58.605	2026.04.22 01:00:00  Supertrend_Promax XAUUSD.m,H1: [LAHIR] jalur B (panah-ESP umur 0bar) SELL 4719.59 | SL 4773.35 TP1 4690.92 TP2 4669.41 | skor 78 kuorum 4/4 | R:R 1:0.93
+0	01:14:58.605	2026.04.22 01:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 16bar panah 999bar] SELL 4719.59 | skor 78 kuorum 4/4 | ST 65 HA 64 ESP 85* SR bebas
+0	01:14:58.605	2026.04.22 01:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4768.87 (swing+rapat, 1.37xATR) TP1 4697.91 TP2 4680.16 (plafon) | R:R 1:0.80 | kelas 2 chop 50
+0	01:14:58.605	2026.04.22 01:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=16 | SRkuat=50 | ESPtenaga=77 | teregang=1.24xATR | struktur=65
+0	01:14:58.605	2026.04.22 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=64.7 grade=2 chop=50.0 HA=-1 ESP=-1/85 age=0 rev=0 SR=0/0 hint=2
+0	01:14:58.793	2026.04.22 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=44.1 grade=1 chop=50.0 HA=-1 ESP=-1/24 age=1 rev=0 SR=0/0 hint=0
+0	01:14:58.964	2026.04.22 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=31.5 grade=1 chop=50.0 HA=-1 ESP=-1/9 age=2 rev=0 SR=0/0 hint=0
+0	01:14:59.063	2026.04.22 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=30.4 grade=1 chop=50.0 HA=-1 ESP=-1/27 age=3 rev=0 SR=0/0 hint=0
+0	01:14:59.340	2026.04.22 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=40.1 grade=1 chop=0.0 HA=-1 ESP=1/31 age=0 rev=0 SR=0/0 hint=0
+0	01:14:59.555	2026.04.22 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=35.9 grade=1 chop=0.0 HA=1 ESP=1/42 age=1 rev=0 SR=0/0 hint=0
+0	01:14:59.730	2026.04.22 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=35.9 grade=1 chop=0.0 HA=1 ESP=1/51 age=2 rev=0 SR=0/0 hint=0
+0	01:14:59.879	2026.04.22 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=40.0 grade=1 chop=0.0 HA=1 ESP=1/50 age=3 rev=0 SR=0/0 hint=0
+0	01:15:00.042	2026.04.22 09:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL DICABUT] umur [B] umur 8 bar | sebab: arah-balik | skor 73 kuorum 4/4 | MFE 0.00R MAE -0.78R
+0	01:15:00.042	2026.04.22 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=1 score=61.4 grade=2 chop=50.0 HA=1 ESP=1/56 age=4 rev=0 SR=0/0 hint=2
+0	01:15:00.277	2026.04.22 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=60.5 grade=2 chop=50.0 HA=1 ESP=1/45 age=5 rev=0 SR=0/0 hint=2
+0	01:15:00.451	2026.04.22 11:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 2bar panah 999bar] BUY 4760.70 | skor 74 kuorum 4/4 | ST 76 HA 100 ESP 58 SR 1.4
+0	01:15:00.451	2026.04.22 11:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4748.87 (swing, 0.88xATR) TP1 4768.79 TP2 4775.41 (plafon) | R:R 1:1.24 | kelas 3 chop 50
+0	01:15:00.451	2026.04.22 11:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=YA(2bar) | HAumur=5 | SRkuat=75 | ESPtenaga=95 | teregang=1.88xATR | struktur=76
+0	01:15:00.451	2026.04.22 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=76.1 grade=3 chop=50.0 HA=1 ESP=1/57 age=6 rev=0 SR=0/0 hint=2
+0	01:15:00.714	2026.04.22 12:00:00  Supertrend_Promax XAUUSD.m,H1: [EXP] jalur B umur 11 bar | MFE 0.00R MAE -0.89R | skor-lahir 78 kuorum-lahir 4 | TP1 TIDAK kena
+0	01:15:00.714	2026.04.22 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=54.6 grade=2 chop=50.0 HA=1 ESP=1/66 age=7 rev=0 SR=0/0 hint=2
+0	01:15:00.885	2026.04.22 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=38.7 grade=1 chop=50.0 HA=1 ESP=1/70 age=8 rev=0 SR=0/0 hint=0
+0	01:15:01.120	2026.04.22 14:00:00  Supertrend_Promax XAUUSD.m,H1: [SL TERSENTUH] umur [B] umur 3 bar | MFE 0.00R MAE -0.47R | TP1 TIDAK kena
+0	01:15:01.120	2026.04.22 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=26.5 grade=0 chop=50.0 HA=1 ESP=1/71 age=9 rev=0 SR=0/0 hint=0
+0	01:15:01.354	2026.04.22 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=23.5 grade=0 chop=50.0 HA=1 ESP=1/82 age=10 rev=0 SR=0/0 hint=0
+0	01:15:01.524	2026.04.22 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=16.7 grade=0 chop=50.0 HA=1 ESP=1/100 age=11 rev=0 SR=0/0 hint=0
+0	01:15:01.652	2026.04.22 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=16.1 grade=0 chop=50.0 HA=1 ESP=1/82 age=12 rev=0 SR=0/0 hint=0
+0	01:15:01.870	2026.04.22 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=18.5 grade=0 chop=50.0 HA=1 ESP=-1/100 age=0 rev=-1 SR=0/0 hint=0
+0	01:15:02.090	2026.04.22 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=-1 score=25.7 grade=0 chop=100.0 HA=-1 ESP=-1/100 age=1 rev=0 SR=0/0 hint=0
+0	01:15:02.355	2026.04.22 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=32.5 grade=1 chop=100.0 HA=-1 ESP=-1/91 age=2 rev=0 SR=0/0 hint=0
+0	01:15:02.631	2026.04.22 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=19.4 grade=0 chop=100.0 HA=-1 ESP=-1/59 age=3 rev=0 SR=0/0 hint=0
+0	01:15:02.854	2026.04.22 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=14.5 grade=0 chop=100.0 HA=-1 ESP=-1/32 age=4 rev=0 SR=0/0 hint=0
+0	01:15:03.028	2026.04.22 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=8.8 grade=0 chop=100.0 HA=-1 ESP=-1/15 age=5 rev=0 SR=0/0 hint=0
+0	01:15:03.151	2026.04.23 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=10.7 grade=0 chop=100.0 HA=-1 ESP=-1/33 age=6 rev=0 SR=0/0 hint=0
+0	01:15:03.245	2026.04.23 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=19.6 grade=0 chop=100.0 HA=-1 ESP=-1/92 age=0 rev=-1 SR=1/0 hint=0
+0	01:15:03.355	2026.04.23 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=26.6 grade=0 chop=100.0 HA=-1 ESP=-1/100 age=1 rev=0 SR=1/0 hint=0
+0	01:15:03.731	2026.04.23 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=44.6 grade=1 chop=100.0 HA=-1 ESP=-1/91 age=2 rev=0 SR=0/1 hint=0
+0	01:15:04.089	2026.04.23 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=47.5 grade=1 chop=100.0 HA=-1 ESP=-1/77 age=3 rev=0 SR=1/0 hint=0
+0	01:15:04.918	2026.04.23 06:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 10bar panah 999bar] SELL 4698.89 | skor 62 kuorum 3/4 | ST 60 HA 36 ESP 100* SR MENTOK
+0	01:15:04.918	2026.04.23 06:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4725.91 (ST+rapat, 1.38xATR) TP1 4687.00 TP2 4677.28 (plafon) | R:R 1:0.80 | kelas 2 chop 50
+0	01:15:04.918	2026.04.23 06:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=10 | SRkuat=75 | ESPtenaga=80 | teregang=2.92xATR | struktur=60
+0	01:15:04.918	2026.04.23 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=59.7 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=4 rev=-1 SR=0/0 hint=2
+0	01:15:05.256	2026.04.23 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=64.2 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=5 rev=0 SR=1/0 hint=2
+0	01:15:05.369	2026.04.23 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=62.5 grade=2 chop=50.0 HA=-1 ESP=-1/92 age=6 rev=0 SR=1/0 hint=2
+0	01:15:05.605	2026.04.23 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=56.7 grade=2 chop=50.0 HA=-1 ESP=-1/71 age=7 rev=0 SR=0/0 hint=2
+0	01:15:05.917	2026.04.23 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=31.6 grade=1 chop=50.0 HA=-1 ESP=-1/31 age=8 rev=0 SR=0/0 hint=0
+0	01:15:06.293	2026.04.23 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=25.8 grade=0 chop=50.0 HA=-1 ESP=-1/14 age=9 rev=0 SR=0/0 hint=0
+0	01:15:06.557	2026.04.23 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=21.7 grade=0 chop=50.0 HA=-1 ESP=-1/43 age=10 rev=0 SR=1/0 hint=0
+0	01:15:06.839	2026.04.23 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=32.9 grade=1 chop=50.0 HA=-1 ESP=-1/100 age=0 rev=-1 SR=1/0 hint=0
+0	01:15:07.080	2026.04.23 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=54.8 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=1 rev=0 SR=1/0 hint=2
+0	01:15:07.355	2026.04.23 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=45.0 grade=1 chop=50.0 HA=-1 ESP=-1/28 age=2 rev=0 SR=0/0 hint=0
+0	01:15:07.767	2026.04.23 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=1 score=7.9 grade=0 chop=50.0 HA=-1 ESP=-1/73 age=3 rev=0 SR=0/0 hint=0
+0	01:15:08.260	2026.04.23 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=5.0 grade=0 chop=50.0 HA=-1 ESP=-1/26 age=4 rev=0 SR=0/0 hint=0
+0	01:15:08.730	2026.04.23 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=16.9 grade=0 chop=50.0 HA=1 ESP=-1/4 age=5 rev=0 SR=0/0 hint=0
+0	01:15:09.153	2026.04.23 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=14.4 grade=0 chop=50.0 HA=1 ESP=-1/31 age=6 rev=0 SR=0/0 hint=0
+0	01:15:09.421	2026.04.23 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=13.5 grade=0 chop=50.0 HA=1 ESP=-1/30 age=7 rev=0 SR=0/0 hint=0
+0	01:15:09.970	2026.04.23 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=10.3 grade=0 chop=50.0 HA=1 ESP=-1/100 age=8 rev=0 SR=0/0 hint=0
+0	01:15:10.339	2026.04.23 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=9.8 grade=0 chop=50.0 HA=1 ESP=-1/100 age=9 rev=0 SR=1/0 hint=0
+0	01:15:10.746	2026.04.23 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=20.5 grade=0 chop=50.0 HA=-1 ESP=-1/100 age=10 rev=0 SR=1/0 hint=0
+0	01:15:10.953	2026.04.24 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=27.1 grade=0 chop=50.0 HA=-1 ESP=-1/100 age=0 rev=-1 SR=0/0 hint=0
+0	01:15:11.073	2026.04.24 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=24.5 grade=0 chop=50.0 HA=-1 ESP=-1/85 age=1 rev=0 SR=0/0 hint=0
+0	01:15:11.246	2026.04.24 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=29.1 grade=0 chop=50.0 HA=-1 ESP=-1/89 age=0 rev=0 SR=0/0 hint=0
+0	01:15:11.543	2026.04.24 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=19.6 grade=0 chop=50.0 HA=-1 ESP=-1/24 age=1 rev=0 SR=0/0 hint=0
+0	01:15:11.886	2026.04.24 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=13.6 grade=0 chop=50.0 HA=-1 ESP=-1/6 age=2 rev=0 SR=0/0 hint=0
+0	01:15:12.167	2026.04.24 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=-1 score=0.0 grade=0 chop=100.0 HA=-1 ESP=-1/100 age=3 rev=0 SR=1/0 hint=0
+0	01:15:12.434	2026.04.24 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=22.1 grade=0 chop=100.0 HA=-1 ESP=-1/100 age=4 rev=-1 SR=1/0 hint=0
+0	01:15:12.635	2026.04.24 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=41.3 grade=1 chop=100.0 HA=-1 ESP=-1/100 age=5 rev=0 SR=1/0 hint=0
+0	01:15:12.854	2026.04.24 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=28.9 grade=0 chop=100.0 HA=-1 ESP=-1/75 age=6 rev=0 SR=0/0 hint=0
+0	01:15:13.162	2026.04.24 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=35.2 grade=1 chop=100.0 HA=-1 ESP=-1/95 age=7 rev=0 SR=1/0 hint=0
+0	01:15:13.371	2026.04.24 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=18.5 grade=0 chop=100.0 HA=-1 ESP=-1/30 age=8 rev=0 SR=0/1 hint=0
+0	01:15:13.605	2026.04.24 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=13.5 grade=0 chop=100.0 HA=-1 ESP=-1/35 age=9 rev=0 SR=0/0 hint=0
+0	01:15:13.886	2026.04.24 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=30.7 grade=1 chop=50.0 HA=-1 ESP=-1/29 age=10 rev=0 SR=0/0 hint=0
+0	01:15:14.059	2026.04.24 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=37.5 grade=1 chop=50.0 HA=-1 ESP=-1/100 age=11 rev=0 SR=0/0 hint=0
+0	01:15:14.495	2026.04.24 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=1 score=0.0 grade=0 chop=100.0 HA=-1 ESP=-1/68 age=12 rev=0 SR=0/1 hint=0
+0	01:15:14.855	2026.04.24 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=0.0 grade=0 chop=100.0 HA=-1 ESP=-1/35 age=13 rev=0 SR=0/1 hint=0
+0	01:15:15.417	2026.04.24 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=0.0 grade=0 chop=100.0 HA=1 ESP=-1/34 age=14 rev=0 SR=0/1 hint=0
+0	01:15:15.984	2026.04.24 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=10.2 grade=0 chop=100.0 HA=1 ESP=-1/72 age=15 rev=0 SR=0/0 hint=0
+0	01:15:16.449	2026.04.24 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=17.6 grade=0 chop=100.0 HA=1 ESP=-1/39 age=16 rev=0 SR=0/0 hint=0
+0	01:15:16.761	2026.04.24 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=28.4 grade=0 chop=100.0 HA=1 ESP=1/21 age=0 rev=0 SR=0/0 hint=0
+0	01:15:17.027	2026.04.24 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=26.0 grade=0 chop=100.0 HA=1 ESP=1/28 age=1 rev=0 SR=0/1 hint=0
+0	01:15:17.261	2026.04.24 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=13.8 grade=0 chop=100.0 HA=1 ESP=1/34 age=2 rev=0 SR=0/1 hint=0
+0	01:15:17.504	2026.04.24 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=0.0 grade=0 chop=100.0 HA=1 ESP=1/99 age=3 rev=0 SR=0/0 hint=0
+0	01:15:17.634	2026.04.27 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=2.5 grade=0 chop=100.0 HA=1 ESP=1/100 age=4 rev=0 SR=0/0 hint=0
+0	01:15:17.775	2026.04.27 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=16.5 grade=0 chop=100.0 HA=1 ESP=-1/100 age=0 rev=-1 SR=0/0 hint=0
+0	01:15:17.955	2026.04.27 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=40.2 grade=1 chop=50.0 HA=1 ESP=-1/100 age=1 rev=0 SR=0/0 hint=0
+0	01:15:18.121	2026.04.27 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=43.7 grade=1 chop=50.0 HA=-1 ESP=-1/83 age=2 rev=0 SR=0/0 hint=0
+0	01:15:18.480	2026.04.27 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=34.2 grade=1 chop=50.0 HA=-1 ESP=-1/36 age=3 rev=0 SR=0/0 hint=0
+0	01:15:18.746	2026.04.27 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=15.5 grade=0 chop=50.0 HA=-1 ESP=-1/16 age=4 rev=0 SR=0/0 hint=0
+0	01:15:18.945	2026.04.27 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=20.6 grade=0 chop=50.0 HA=-1 ESP=-1/39 age=5 rev=0 SR=0/1 hint=0
+0	01:15:19.033	2026.04.27 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=21.7 grade=0 chop=50.0 HA=-1 ESP=-1/26 age=6 rev=0 SR=0/1 hint=0
+0	01:15:19.277	2026.04.27 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=12.4 grade=0 chop=50.0 HA=1 ESP=-1/34 age=7 rev=0 SR=0/0 hint=0
+0	01:15:19.511	2026.04.27 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=0.0 grade=0 chop=50.0 HA=1 ESP=-1/62 age=8 rev=0 SR=0/0 hint=0
+0	01:15:19.778	2026.04.27 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=10.1 grade=0 chop=50.0 HA=1 ESP=-1/75 age=9 rev=0 SR=0/0 hint=0
+0	01:15:20.043	2026.04.27 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=22.3 grade=0 chop=0.0 HA=1 ESP=-1/100 age=10 rev=0 SR=0/0 hint=0
+0	01:15:20.292	2026.04.27 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=27.2 grade=0 chop=0.0 HA=1 ESP=-1/100 age=11 rev=0 SR=0/0 hint=0
+0	01:15:20.469	2026.04.27 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=30.7 grade=1 chop=0.0 HA=1 ESP=-1/98 age=12 rev=0 SR=0/0 hint=0
+0	01:15:20.621	2026.04.27 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=11.3 grade=0 chop=0.0 HA=-1 ESP=-1/100 age=13 rev=0 SR=0/0 hint=0
+0	01:15:20.904	2026.04.27 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=4.6 grade=0 chop=0.0 HA=-1 ESP=-1/100 age=14 rev=0 SR=0/0 hint=0
+0	01:15:21.261	2026.04.27 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=1 flip=0 score=4.7 grade=0 chop=0.0 HA=-1 ESP=-1/100 age=15 rev=0 SR=0/0 hint=0
+0	01:15:21.662	2026.04.27 18:00:00  Supertrend_Promax XAUUSD.m,H1:    [VOL] efisiensi=0.297 | volRel=1.86 | volArah=1.35 | chop=50 | ATR=12.00
+0	01:15:21.662	2026.04.27 18:00:00  Supertrend_Promax XAUUSD.m,H1: [LAHIR] jalur A (flip-ST umur 0bar) SELL 4678.16 | SL 4702.15 TP1 4666.16 TP2 4654.17 | skor 72 kuorum 4/4 | R:R 1:1.00
+0	01:15:21.662	2026.04.27 18:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 0bar panah 999bar] SELL 4678.16 | skor 72 kuorum 4/4 | ST 50 HA 66 ESP 100 SR 2.8
+0	01:15:21.662	2026.04.27 18:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4694.65 (ST+rapat, 1.38xATR) TP1 4670.90 TP2 4664.97 (plafon) | R:R 1:0.80 | kelas 2 chop 50
+0	01:15:21.662	2026.04.27 18:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=3 | SRkuat=25 | ESPtenaga=71 | teregang=2.99xATR | struktur=50
+0	01:15:21.669	2026.04.27 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=-1 score=50.1 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=16 rev=0 SR=0/0 hint=2
+0	01:15:22.011	2026.04.27 19:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL DICABUT] umur [B] umur 1 bar | sebab: VETO-ESP | skor 58 kuorum 3/4 | MFE 0.00R MAE 0.00R
+0	01:15:22.011	2026.04.27 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=66.1 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=17 rev=0 SR=0/0 hint=2
+0	01:15:22.246	2026.04.27 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=68.6 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=18 rev=0 SR=0/0 hint=2
+0	01:15:22.527	2026.04.27 21:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 3bar panah 999bar] SELL 4682.22 | skor 72 kuorum 4/4 | ST 63 HA 87 ESP 81 SR 1.7
+0	01:15:22.527	2026.04.27 21:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4700.61 (ST+rapat, 1.37xATR) TP1 4674.13 TP2 4667.51 (plafon) | R:R 1:0.80 | kelas 2 chop 50
+0	01:15:22.527	2026.04.27 21:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=6 | SRkuat=25 | ESPtenaga=75 | teregang=1.46xATR | struktur=63
+0	01:15:22.527	2026.04.27 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=62.9 grade=2 chop=50.0 HA=-1 ESP=-1/80 age=19 rev=0 SR=0/0 hint=2
+0	01:15:22.698	2026.04.27 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=58.8 grade=2 chop=50.0 HA=-1 ESP=-1/61 age=20 rev=0 SR=0/0 hint=2
+0	01:15:22.886	2026.04.27 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=53.5 grade=2 chop=50.0 HA=-1 ESP=-1/60 age=0 rev=-1 SR=0/0 hint=2
+0	01:15:22.964	2026.04.28 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=53.8 grade=2 chop=50.0 HA=-1 ESP=-1/42 age=1 rev=0 SR=0/1 hint=2
+0	01:15:23.073	2026.04.28 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=28.7 grade=0 chop=50.0 HA=-1 ESP=-1/30 age=2 rev=0 SR=0/0 hint=0
+0	01:15:23.120	2026.04.28 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=23.7 grade=0 chop=50.0 HA=-1 ESP=-1/39 age=3 rev=0 SR=0/0 hint=0
+0	01:15:23.340	2026.04.28 04:00:00  Supertrend_Promax XAUUSD.m,H1: [SL TERSENTUH] umur [B] umur 6 bar | MFE 0.08R MAE -0.53R | TP1 TIDAK kena
+0	01:15:23.340	2026.04.28 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=24.7 grade=0 chop=50.0 HA=-1 ESP=-1/41 age=4 rev=0 SR=0/0 hint=0
+0	01:15:23.643	2026.04.28 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=24.9 grade=0 chop=50.0 HA=-1 ESP=-1/82 age=5 rev=0 SR=0/0 hint=0
+0	01:15:23.949	2026.04.28 06:00:00  Supertrend_Promax XAUUSD.m,H1: [EXP] jalur A umur 11 bar | MFE 0.38R MAE -0.58R | skor-lahir 72 kuorum-lahir 4 | TP1 TIDAK kena
+0	01:15:23.949	2026.04.28 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=15.5 grade=0 chop=50.0 HA=-1 ESP=-1/100 age=6 rev=0 SR=1/0 hint=0
+0	01:15:24.105	2026.04.28 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=13.7 grade=0 chop=50.0 HA=-1 ESP=-1/100 age=7 rev=0 SR=0/0 hint=0
+0	01:15:24.197	2026.04.28 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=19.7 grade=0 chop=50.0 HA=-1 ESP=-1/100 age=8 rev=0 SR=1/0 hint=0
+0	01:15:24.526	2026.04.28 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=30.3 grade=1 chop=50.0 HA=-1 ESP=-1/100 age=9 rev=0 SR=0/0 hint=0
+0	01:15:24.918	2026.04.28 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=47.5 grade=1 chop=50.0 HA=-1 ESP=-1/100 age=10 rev=0 SR=0/0 hint=0
+0	01:15:25.273	2026.04.28 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=52.0 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=11 rev=0 SR=0/0 hint=2
+0	01:15:25.612	2026.04.28 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=58.2 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=12 rev=0 SR=0/0 hint=2
+0	01:15:25.871	2026.04.28 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=62.6 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=13 rev=0 SR=0/0 hint=2
+0	01:15:26.136	2026.04.28 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=63.8 grade=2 chop=50.0 HA=-1 ESP=-1/100 age=14 rev=0 SR=0/0 hint=2
+0	01:15:26.604	2026.04.28 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=81.0 grade=3 chop=0.0 HA=-1 ESP=-1/100 age=15 rev=0 SR=0/0 hint=2
+0	01:15:27.043	2026.04.28 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=84.0 grade=3 chop=0.0 HA=-1 ESP=-1/100 age=16 rev=0 SR=0/0 hint=2
+0	01:15:27.684	2026.04.28 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=83.7 grade=3 chop=0.0 HA=-1 ESP=-1/90 age=17 rev=0 SR=0/0 hint=2
+0	01:15:28.214	2026.04.28 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=86.0 grade=3 chop=0.0 HA=-1 ESP=-1/100 age=18 rev=0 SR=0/0 hint=2
+0	01:15:28.699	2026.04.28 19:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST 24bar panah 999bar] SELL 4586.48 | skor 67 kuorum 3/4 | ST 79 HA 83 ESP 77 SR 0.9?
+0	01:15:28.699	2026.04.28 19:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4621.05 (ST+rapat, 1.32xATR) TP1 4571.27 TP2 4558.82 (SR) | R:R 1:0.80 | kelas 3 chop 0
+0	01:15:28.699	2026.04.28 19:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=27 | SRkuat=50 | ESPtenaga=71 | teregang=1.74xATR | struktur=79
+0	01:15:28.699	2026.04.28 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=79.5 grade=3 chop=0.0 HA=-1 ESP=-1/76 age=19 rev=0 SR=0/0 hint=2
+0	01:15:29.011	2026.04.28 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=59.3 grade=2 chop=0.0 HA=-1 ESP=-1/19 age=20 rev=0 SR=0/0 hint=2
+0	01:15:29.308	2026.04.28 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=44.4 grade=1 chop=0.0 HA=-1 ESP=-1/10 age=21 rev=0 SR=0/0 hint=0
+0	01:15:29.512	2026.04.28 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=42.6 grade=1 chop=0.0 HA=-1 ESP=-1/3 age=22 rev=0 SR=0/0 hint=0
+0	01:15:29.730	2026.04.28 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=45.6 grade=1 chop=0.0 HA=-1 ESP=-1/9 age=23 rev=0 SR=0/0 hint=0
+0	01:15:29.839	2026.04.29 01:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=44.5 grade=1 chop=0.0 HA=-1 ESP=-1/30 age=24 rev=0 SR=0/1 hint=0
+0	01:15:29.917	2026.04.29 02:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=36.6 grade=1 chop=0.0 HA=-1 ESP=-1/18 age=25 rev=0 SR=0/1 hint=0
+0	01:15:29.964	2026.04.29 03:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=42.0 grade=1 chop=0.0 HA=-1 ESP=-1/100 age=26 rev=0 SR=0/1 hint=0
+0	01:15:30.197	2026.04.29 04:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=32.2 grade=1 chop=0.0 HA=-1 ESP=-1/82 age=27 rev=0 SR=0/1 hint=0
+0	01:15:30.532	2026.04.29 05:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL KEDALUWARSA] umur [B] umur 9 bar | MFE 0.00R MAE -0.40R | TP1 TIDAK kena - tak menyentuh TP maupun SL
+0	01:15:30.533	2026.04.29 05:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=38.7 grade=1 chop=0.0 HA=-1 ESP=-1/100 age=28 rev=0 SR=0/1 hint=0
+0	01:15:30.750	2026.04.29 06:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=26.0 grade=0 chop=0.0 HA=-1 ESP=-1/65 age=29 rev=0 SR=0/1 hint=0
+0	01:15:30.902	2026.04.29 07:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=4.3 grade=0 chop=0.0 HA=-1 ESP=-1/23 age=30 rev=0 SR=0/0 hint=0
+0	01:15:31.027	2026.04.29 08:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=1.2 grade=0 chop=0.0 HA=-1 ESP=-1/39 age=31 rev=0 SR=0/1 hint=0
+0	01:15:31.173	2026.04.29 09:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=2.0 grade=0 chop=0.0 HA=-1 ESP=-1/73 age=32 rev=0 SR=0/0 hint=0
+0	01:15:31.447	2026.04.29 10:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=11.0 grade=0 chop=0.0 HA=-1 ESP=-1/100 age=33 rev=0 SR=0/0 hint=0
+0	01:15:31.792	2026.04.29 11:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=46.4 grade=1 chop=0.0 HA=-1 ESP=-1/100 age=34 rev=0 SR=0/0 hint=0
+0	01:15:32.089	2026.04.29 12:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST -bar panah 999bar] SELL 4573.20 | skor 63 kuorum 3/4 | ST 61 HA 72 ESP 100 SR 1.1?
+0	01:15:32.089	2026.04.29 12:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4593.64 (swing+rapat, 1.24xATR) TP1 4564.21 TP2 4556.85 (SR) | R:R 1:0.80 | kelas 2 chop 0
+0	01:15:32.089	2026.04.29 12:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=43 | SRkuat=25 | ESPtenaga=53 | teregang=1.90xATR | struktur=61
+0	01:15:32.089	2026.04.29 12:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=60.7 grade=2 chop=0.0 HA=-1 ESP=-1/100 age=35 rev=0 SR=0/0 hint=2
+0	01:15:32.433	2026.04.29 13:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL DICABUT] umur [B] umur 1 bar | sebab: VETO-ESP | skor 53 kuorum 3/4 | MFE 0.00R MAE 0.00R
+0	01:15:32.433	2026.04.29 13:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=65.5 grade=2 chop=0.0 HA=-1 ESP=-1/100 age=36 rev=0 SR=1/0 hint=2
+0	01:15:32.651	2026.04.29 14:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=67.7 grade=2 chop=0.0 HA=-1 ESP=-1/91 age=37 rev=0 SR=1/0 hint=2
+0	01:15:32.942	2026.04.29 15:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=78.7 grade=3 chop=0.0 HA=-1 ESP=-1/84 age=38 rev=0 SR=1/0 hint=2
+0	01:15:33.254	2026.04.29 16:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=87.2 grade=3 chop=0.0 HA=-1 ESP=-1/100 age=39 rev=0 SR=0/0 hint=2
+0	01:15:33.744	2026.04.29 17:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=92.3 grade=3 chop=0.0 HA=-1 ESP=-1/100 age=40 rev=0 SR=0/0 hint=2
+0	01:15:34.198	2026.04.29 18:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST -bar panah 999bar] SELL 4539.39 | skor 86 kuorum 4/4 | ST 94 HA 43 ESP 100 SR bebas
+0	01:15:34.198	2026.04.29 18:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4571.53 (ST+rapat, 1.38xATR) TP1 4525.25 TP2 4513.68 (plafon) | R:R 1:0.80 | kelas 3 chop 0
+0	01:15:34.198	2026.04.29 18:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=49 | SRkuat=75 | ESPtenaga=100 | teregang=1.81xATR | struktur=94
+0	01:15:34.198	2026.04.29 18:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=94.0 grade=3 chop=0.0 HA=-1 ESP=-1/100 age=41 rev=0 SR=0/0 hint=2
+0	01:15:34.589	2026.04.29 19:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=81.9 grade=3 chop=0.0 HA=-1 ESP=-1/56 age=42 rev=0 SR=0/0 hint=2
+0	01:15:35.003	2026.04.29 20:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=62.5 grade=2 chop=0.0 HA=-1 ESP=-1/34 age=43 rev=0 SR=0/0 hint=2
+0	01:15:35.308	2026.04.29 21:00:00  Supertrend_Promax XAUUSD.m,H1: [SINYAL LAHIR] XAUUSD.m H1 [B-SEDANG flipST -bar panah 999bar] SELL 4547.57 | skor 60 kuorum 4/4 | ST 59 HA 47 ESP 39 SR 1.7
+0	01:15:35.308	2026.04.29 21:00:00  Supertrend_Promax XAUUSD.m,H1:                SL 4579.83 (ST+rapat, 1.38xATR) TP1 4533.38 TP2 4521.77 (plafon) | R:R 1:0.80 | kelas 2 chop 0
+0	01:15:35.308	2026.04.29 21:00:00  Supertrend_Promax XAUUSD.m,H1:                [BAROMETER] panahBesar=tidak | HAumur=52 | SRkuat=25 | ESPtenaga=70 | teregang=1.46xATR | struktur=59
+0	01:15:35.308	2026.04.29 21:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=59.3 grade=2 chop=0.0 HA=-1 ESP=-1/39 age=44 rev=0 SR=0/0 hint=2
+0	01:15:35.760	2026.04.29 22:00:00  Supertrend_Promax XAUUSD.m,H1: [TP1 TERSENTUH] umur [B] umur 1 bar | MFE 0.29R
+0	01:15:35.760	2026.04.29 22:00:00  Supertrend_Promax XAUUSD.m,H1: [TP2 TERSENTUH] umur [B] umur 1 bar | MFE 0.29R MAE 0.00R  <- SUKSES PENUH
+0	01:15:35.760	2026.04.29 22:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=65.2 grade=2 chop=0.0 HA=-1 ESP=-1/89 age=45 rev=0 SR=0/0 hint=2
+0	01:15:36.167	2026.04.29 23:00:00  AurumPulse_XAUUSD_v6.49_INTEGRATED XAUUSD.m,H1: [v6.49 CTX] ST=-1 flip=0 score=60.5 grade=2 chop=0.0 HA=-1 ESP=-1/64 age=46 rev=0 SR=0/0 hint=2
+0	01:15:36.446	XAUUSD.m,H1: 5001874 tick events (460 bars, 5002840 bar states) processed in 0:02:09.703 (total time 0:02:12.750)
+0	01:15:36.472	SuperSR_6 XAUUSD.m,H1: ---- PROFIL SUPERSR - XAUUSD.m M60 ----
+0	01:15:36.472	SuperSR_6 XAUUSD.m,H1:   Validasi swing    : AKTIF  (lookback 12 bar, tonjolan >= 1.10 xATR)
+0	01:15:36.472	SuperSR_6 XAUUSD.m,H1:   Level BERBEDA lahir: resistance 28 | support 10 (dlm 300 bar) - INI yg menentukan kerapatan visual
+0	01:15:36.472	SuperSR_6 XAUUSD.m,H1:   Cakupan bar (info)  : resistance 275/300 | support 277/300  (level yg sama diteruskan ke depan - wajar tinggi)
+0	01:15:36.472	SuperSR_6 XAUUSD.m,H1:   Kekuatan level    : 69/100 (rata-rata)
+0	01:15:36.472	SuperSR_6 XAUUSD.m,H1:   CARA MEMBACA: level berbeda >15 dlm 300 bar (H1) = masih rapat;
+0	01:15:36.472	SuperSR_6 XAUUSD.m,H1:                 4-10 = wajar; <3 = mungkin terlalu ketat.
+0	01:15:36.472	Entry_Signal_Pro XAUUSD.m,H1: ---- PROFIL RSI Entry_Signal_Pro - XAUUSD.m M60 ----
+0	01:15:36.472	Entry_Signal_Pro XAUUSD.m,H1:   Batas jenuh : 35.0/67.0 (input) -> 36.8/64.4 (sebaran nyata)
+0	01:15:36.472	Entry_Signal_Pro XAUUSD.m,H1:   CATATAN: dikunci utk sesi ini - tidak repaint.
+0	01:15:36.488	HeikenAshi_Custom XAUUSD.m,H1: ---- PROFIL DERAU HEIKEN ASHI - XAUUSD.m M60 ----
+0	01:15:36.488	HeikenAshi_Custom XAUUSD.m,H1:   Pergantian arah HA mentah : 26.5 per 100 bar (target 26.0)
+0	01:15:36.488	HeikenAshi_Custom XAUUSD.m,H1:   MinFlipBars               : 3 (input) -> 3 (hasil ukur)
+0	01:15:36.488	HeikenAshi_Custom XAUUSD.m,H1:   CATATAN: dikunci utk sesi ini - tidak repaint.
+0	01:15:36.503	Supertrend_Promax XAUUSD.m,H1: ---- PROFIL INSTRUMEN OTOMATIS - XAUUSD.m M60 ----
+0	01:15:36.503	Supertrend_Promax XAUUSD.m,H1:   Jendela pengukuran   : 600 bar (ideal 600, min 300)
+0	01:15:36.503	Supertrend_Promax XAUUSD.m,H1:   Karakter volatilitas : TINGGI  (ATR/harga = 40.4 bp)
+0	01:15:36.503	Supertrend_Promax XAUUSD.m,H1:   ATRMultiplier        : 2.40 (input) -> 2.54 (hasil ukur, target 1 flip / 30 bar)
+0	01:15:36.503	Supertrend_Promax XAUUSD.m,H1:   Batas jenuh RSI      : 35.0/67.0 (input) -> 37.9/63.4 (sebaran nyata)
+0	01:15:36.503	Supertrend_Promax XAUUSD.m,H1:   Acuan tubuh candle   : 0.57 x ATR (kebiasaan pasar ini)
+0	01:15:36.503	Supertrend_Promax XAUUSD.m,H1:   Acuan chop           : 2.0 flip per 20 bar
+0	01:15:36.503	Supertrend_Promax XAUUSD.m,H1:   CATATAN: nilai ini DIKUNCI utk sesi ini - tidak repaint, backtest reproducible.
+0	01:15:36.550	HeikenAshi_Custom XAUUSD.m,H1: ---- PROFIL DERAU HEIKEN ASHI - XAUUSD.m M60 ----
+0	01:15:36.550	HeikenAshi_Custom XAUUSD.m,H1:   Pergantian arah HA mentah : 26.5 per 100 bar (target 26.0)
+0	01:15:36.550	HeikenAshi_Custom XAUUSD.m,H1:   MinFlipBars               : 3 (input) -> 3 (hasil ukur)
+0	01:15:36.550	HeikenAshi_Custom XAUUSD.m,H1:   CATATAN: dikunci utk sesi ini - tidak repaint.
+0	01:15:36.581	Entry_Signal_Pro XAUUSD.m,H1: ---- PROFIL RSI Entry_Signal_Pro - XAUUSD.m M60 ----
+0	01:15:36.581	Entry_Signal_Pro XAUUSD.m,H1:   Batas jenuh : 35.0/67.0 (input) -> 36.8/64.4 (sebaran nyata)
+0	01:15:36.581	Entry_Signal_Pro XAUUSD.m,H1:   CATATAN: dikunci utk sesi ini - tidak repaint.
+0	01:15:36.656	SuperSR_6 XAUUSD.m,H1: ---- PROFIL SUPERSR - XAUUSD.m M60 ----
+0	01:15:36.656	SuperSR_6 XAUUSD.m,H1:   Validasi swing    : AKTIF  (lookback 12 bar, tonjolan >= 1.10 xATR)
+0	01:15:36.656	SuperSR_6 XAUUSD.m,H1:   Level BERBEDA lahir: resistance 28 | support 10 (dlm 300 bar) - INI yg menentukan kerapatan visual
+0	01:15:36.656	SuperSR_6 XAUUSD.m,H1:   Cakupan bar (info)  : resistance 275/300 | support 277/300  (level yg sama diteruskan ke depan - wajar tinggi)
+0	01:15:36.656	SuperSR_6 XAUUSD.m,H1:   Kekuatan level    : 69/100 (rata-rata)
+0	01:15:36.656	SuperSR_6 XAUUSD.m,H1:   CARA MEMBACA: level berbeda >15 dlm 300 bar (H1) = masih rapat;
+0	01:15:36.656	SuperSR_6 XAUUSD.m,H1:                 4-10 = wajar; <3 = mungkin terlalu ketat.
