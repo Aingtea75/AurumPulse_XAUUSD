@@ -1,0 +1,61 @@
+//+------------------------------------------------------------------+
+//| AurumPulse XAUUSD v6.53 TEST7 - Lifecycle Diagnostic             |
+//| Uses v6.52 execution engine unchanged; diagnostic only.          |
+//+------------------------------------------------------------------+
+#property strict
+#property version "6.53"
+#include "AurumPulse_v6.52_ExecutionEngine.mqh"
+input int MagicNumber=65053;
+input double Lots=0.01;
+input int SlippagePoints=30;
+input bool EnableTrading=true;
+input bool EnableMarketEntry=true;
+input bool EnablePendingOrders=true;
+input bool EnableSmartTrailing=true;
+input bool EnableDynamicTP=true;
+input double TrailLockATR=1.00;
+input double TrailDistanceATR=1.20;
+input double TPExtensionATR=2.00;
+input double DynamicTPMinRR=1.50;
+input int ATRPeriodHost=14;
+input double MinTrendScore=55.0;
+input int MinESPStrength=45;
+input int MaxESPAge=6;
+input bool UseDiagnostics=true;
+input bool ShowDashboard=true;
+string ST="Supertrend_Promax",HA="HeikenAshi_Custom",ESP="Entry_Signal_Pro",SR="SuperSR_6";
+datetime g_lastBar=0;
+int g_dir=0,g_ha=0,g_esp=0,g_sr=0,g_stSync=0,g_route=0,g_votes=0;
+double g_score=0,g_espStrength=0,g_espAge=999,g_atr=0,g_res=EMPTY_VALUE,g_sup=EMPTY_VALUE;
+bool g_espFresh=false,g_espVeto=false,g_sideways=false,g_chase=false;
+string g_reason="START";
+bool Valid(double x){return x!=EMPTY_VALUE&&x==x&&x!=0.0;}
+int Sign(double x){return x>0?1:(x<0?-1:0);}
+double Buf(string n,int m,int s){return iCustom(Symbol(),Period(),n,m,s);}
+void ReadIndicators(){
+ g_atr=iATR(Symbol(),Period(),ATRPeriodHost,1);double st=Buf(ST,4,1);g_dir=Sign(st);g_score=Buf(ST,9,1);double grade=Buf(ST,10,1),chop=Buf(ST,11,1);
+ g_stSync=0;double sb=Buf(ST,7,1),ss=Buf(ST,8,1);if(Valid(sb))g_stSync=1;else if(Valid(ss))g_stSync=-1;
+ g_ha=Sign(Buf(HA,6,1));double veto=Buf(ESP,5,1);g_espStrength=Buf(ESP,2,1);g_esp=Sign(Buf(ESP,3,1));g_espAge=Buf(ESP,4,1);g_espVeto=Valid(veto)&&veto>=0.5;
+ g_espFresh=(g_esp!=0&&g_espAge>=0&&g_espAge<=MaxESPAge&&!g_espVeto&&g_espStrength>=MinESPStrength);
+ g_res=Buf(SR,0,1);g_sup=Buf(SR,1,1);g_sr=0;if(Valid(g_res)&&g_res>Ask&&(g_res-Ask)<=g_atr)g_sr=-1;if(Valid(g_sup)&&g_sup<Bid&&(Bid-g_sup)<=g_atr)g_sr=1;
+ g_sideways=(g_score<MinTrendScore||chop>=70.0||grade<=0);double gap=1e10;if(Valid(g_res)&&g_res>Ask)gap=MathMin(gap,g_res-Ask);if(Valid(g_sup)&&g_sup<Bid)gap=MathMin(gap,Bid-g_sup);g_chase=(g_score>=75.0&&gap>g_atr*1.5);
+ if(UseDiagnostics)PrintFormat("[v6.53 TEST7 CTX] ST=%d STsync=%d score=%.1f grade=%.0f chop=%.1f HA=%d ESP=%d ESPstr=%.1f age=%.0f fresh=%d veto=%d SR=%d",g_dir,g_stSync,g_score,grade,chop,g_ha,g_esp,g_espStrength,g_espAge,g_espFresh,g_espVeto,g_sr);
+}
+string GateReason(int d){if(!EnableTrading)return"TRADING_DISABLED";if(g_sideways)return"SIDEWAYS";if(g_chase)return"CHASE_PROTECTION";if(d==0)return"NO_DIRECTION";if(g_ha!=d)return"HA_MISMATCH";if(!g_espFresh)return g_espVeto?"ESP_VETO":(g_esp==0?"ESP_NEUTRAL":"ESP_STALE");if(g_esp!=d)return"ESP_MISMATCH";return"ALIGNED";}
+void Dashboard(){if(!ShowDashboard)return;string p="AP53_";if(ObjectFind(0,p+"PANEL")<0){ObjectCreate(0,p+"PANEL",OBJ_RECTANGLE_LABEL,0,0,0);ObjectSetInteger(0,p+"PANEL",OBJPROP_CORNER,CORNER_LEFT_UPPER);ObjectSetInteger(0,p+"PANEL",OBJPROP_XDISTANCE,8);ObjectSetInteger(0,p+"PANEL",OBJPROP_YDISTANCE,18);ObjectSetInteger(0,p+"PANEL",OBJPROP_XSIZE,500);ObjectSetInteger(0,p+"PANEL",OBJPROP_YSIZE,250);}string l[12];l[0]="AurumPulse v6.53 TEST7 LIFECYCLE";l[1]=StringFormat("Trading=%s  %s  TF=%d",EnableTrading?"ON":"OFF",Symbol(),Period());l[2]=StringFormat("ST=%d SYNC=%d HA=%d ESP=%d SR=%d",g_dir,g_stSync,g_ha,g_esp,g_sr);l[3]=StringFormat("Score=%.1f ESP=%.1f Age=%.0f Fresh=%d",g_score,g_espStrength,g_espAge,g_espFresh);l[4]=StringFormat("ATR=%.2f Spread=%.1f pt",g_atr,(Ask-Bid)/MarketInfo(Symbol(),MODE_POINT));l[5]=StringFormat("Route=%d Votes=%d",g_route,g_votes);l[6]="Decision: "+g_reason;l[7]=StringFormat("Veto=%d Sideways=%d Chase=%d",g_espVeto,g_sideways,g_chase);l[8]=StringFormat("Trail lock=%.2f ATR dist=%.2f ATR",TrailLockATR,TrailDistanceATR);l[9]=StringFormat("DTP ext=%.2f ATR minRR=%.2f",TPExtensionATR,DynamicTPMinRR);l[10]="TEST7 = lifecycle evidence only";l[11]="Entry/DTP/Trailing formulas unchanged";for(int i=0;i<12;i++){string n=p+"L"+IntegerToString(i);if(ObjectFind(0,n)<0){ObjectCreate(0,n,OBJ_LABEL,0,0,0);ObjectSetInteger(0,n,OBJPROP_CORNER,CORNER_LEFT_UPPER);ObjectSetInteger(0,n,OBJPROP_XDISTANCE,18);ObjectSetInteger(0,n,OBJPROP_YDISTANCE,24+i*18);ObjectSetInteger(0,n,OBJPROP_FONTSIZE,9);}ObjectSetString(0,n,OBJPROP_TEXT,l[i]);}}
+void DeleteDashboard(){for(int i=0;i<12;i++)ObjectDelete(0,"AP53_L"+IntegerToString(i));ObjectDelete(0,"AP53_PANEL");}
+bool HasPos(int d){for(int i=OrdersTotal()-1;i>=0;i--)if(OrderSelect(i,SELECT_BY_POS,MODE_TRADES))if(OrderSymbol()==Symbol()&&OrderMagicNumber()==MagicNumber&&((d>0&&OrderType()==OP_BUY)||(d<0&&OrderType()==OP_SELL)))return true;return false;}
+void LifecycleDiagnostic(int ticket,int d,double cur,double oldSL,double oldTP,double atr,double structural){
+ double pt=MarketInfo(Symbol(),MODE_POINT);double pd=d>0?cur-OrderOpenPrice():OrderOpenPrice()-cur;double lock=atr*TrailLockATR;double lockPct=atr>0?pd/atr:0;double candidate=d>0?cur-atr*TrailDistanceATR:cur+atr*TrailDistanceATR;double bounded=candidate;if(structural>0){if(d>0)bounded=MathMax(bounded,structural);else bounded=MathMin(bounded,structural);}if(d>0&&bounded>=cur-pt)bounded=cur-pt;if(d<0&&bounded<=cur+pt)bounded=cur+pt;bool lockReached=pd>lock;bool improves=d>0?bounded>oldSL+pt:bounded<oldSL-pt;bool trailEligible=lockReached&&improves;
+ double tpCandidate=d>0?cur+atr*TPExtensionATR:cur-atr*TPExtensionATR;if(structural>0){if(d>0)tpCandidate=MathMax(tpCandidate,structural);else tpCandidate=MathMin(tpCandidate,structural);}bool tpImproves=d>0?tpCandidate>oldTP+pt:tpCandidate<oldTP-pt;double rr=0;if(oldSL>0&&MathAbs(cur-oldSL)>pt)rr=MathAbs(tpCandidate-cur)/MathAbs(cur-oldSL);bool tpRR=rr>=DynamicTPMinRR;bool tpEligible=EnableDynamicTP&&oldTP>0&&tpImproves&&tpRR;
+ PrintFormat("[v6.53 TEST7 LIFECYCLE] ticket=%d dir=%d open=%.*f cur=%.*f profitR=%.3f ATR=%.2f lock=%.2f lockReached=%d oldSL=%.*f trailRaw=%.*f structural=%.*f trailBound=%.*f improves=%d trailEligible=%d",ticket,d,(int)MarketInfo(Symbol(),MODE_DIGITS),OrderOpenPrice(),(int)MarketInfo(Symbol(),MODE_DIGITS),cur,lockPct,atr,lock,lockReached,(int)MarketInfo(Symbol(),MODE_DIGITS),oldSL,(int)MarketInfo(Symbol(),MODE_DIGITS),candidate,(int)MarketInfo(Symbol(),MODE_DIGITS),structural,(int)MarketInfo(Symbol(),MODE_DIGITS),bounded,improves,trailEligible);
+ PrintFormat("[v6.53 TEST7 DTP] ticket=%d oldTP=%.*f tpCandidate=%.*f tpImproves=%d SL=%.*f candidateRR=%.3f minRR=%.2f tpRR=%d tpEligible=%d",ticket,(int)MarketInfo(Symbol(),MODE_DIGITS),oldTP,(int)MarketInfo(Symbol(),MODE_DIGITS),tpCandidate,tpImproves,(int)MarketInfo(Symbol(),MODE_DIGITS),oldSL,rr,DynamicTPMinRR,tpRR,tpEligible);
+}
+void Manage(){if(!EnableTrading||(!EnableSmartTrailing&&!EnableDynamicTP)||g_atr<=0)return;double pt=MarketInfo(Symbol(),MODE_POINT);int dg=(int)MarketInfo(Symbol(),MODE_DIGITS);for(int i=OrdersTotal()-1;i>=0;i--){if(!OrderSelect(i,SELECT_BY_POS,MODE_TRADES))continue;if(OrderSymbol()!=Symbol()||OrderMagicNumber()!=MagicNumber)continue;int ty=OrderType();if(ty!=OP_BUY&&ty!=OP_SELL)continue;int d=ty==OP_BUY?1:-1;double cur=d>0?Bid:Ask,oldSL=OrderStopLoss(),oldTP=OrderTakeProfit();double structural=d>0?g_sup:g_res;LifecycleDiagnostic(OrderTicket(),d,cur,oldSL,oldTP,g_atr,structural);
+ double nsl=oldSL;if(EnableSmartTrailing&&AP52_ComputeSmartTrail(d,OrderOpenPrice(),cur,oldSL,structural,g_atr,pt,TrailLockATR,TrailDistanceATR,nsl)){nsl=NormalizeDouble(nsl,dg);PrintFormat("[v6.53 TEST7 TRAIL ACCEPT] ticket=%d oldSL=%.*f newSL=%.*f",OrderTicket(),dg,oldSL,dg,nsl);ResetLastError();if(!OrderModify(OrderTicket(),OrderOpenPrice(),nsl,OrderTakeProfit(),0,clrNONE))PrintFormat("[v6.53 TEST7 TRAIL ERROR] ticket=%d err=%d",OrderTicket(),GetLastError());else PrintFormat("[v6.53 TEST7 TRAIL OK] ticket=%d SL=%.*f",OrderTicket(),dg,nsl);}else PrintFormat("[v6.53 TEST7 TRAIL REJECT] ticket=%d reason=not_eligible_or_no_improvement",OrderTicket());
+ if(EnableDynamicTP&&oldTP>0){double ntp=oldTP;bool calc=AP52_ComputeDynamicTP(d,cur,oldTP,OrderStopLoss(),g_atr,structural,g_score>=MinTrendScore,pt,TPExtensionATR,DynamicTPMinRR,ntp);PrintFormat("[v6.53 TEST7 DTP RESULT] ticket=%d calc=%d oldTP=%.*f newTP=%.*f",OrderTicket(),calc,dg,oldTP,dg,ntp);if(calc){ntp=NormalizeDouble(ntp,dg);ResetLastError();if(!OrderModify(OrderTicket(),OrderOpenPrice(),OrderStopLoss(),ntp,0,clrNONE))PrintFormat("[v6.53 TEST7 TP ERROR] ticket=%d err=%d",OrderTicket(),GetLastError());else PrintFormat("[v6.53 TEST7 TP OK] ticket=%d oldTP=%.*f newTP=%.*f",OrderTicket(),dg,oldTP,dg,ntp);}}}}
+void SendPlan(const AP52_ExecutionPlan &p){if(!p.valid){g_reason="PLAN_INVALID";return;}if(HasPos(p.direction)){g_reason="DUPLICATE_POSITION";return;}if(p.route==AP52_ROUTE_MARKET&&!EnableMarketEntry){g_reason="MARKET_DISABLED";return;}if(p.route!=AP52_ROUTE_MARKET&&!EnablePendingOrders){g_reason="PENDING_DISABLED";return;}RefreshRates();int dg=(int)MarketInfo(Symbol(),MODE_DIGITS);double pt=MarketInfo(Symbol(),MODE_POINT);double md=MathMax(pt,MarketInfo(Symbol(),MODE_STOPLEVEL)*pt);int type=-1;double pr=p.entry;if(p.route==AP52_ROUTE_MARKET)type=p.direction>0?OP_BUY:OP_SELL;else if(p.route==AP52_ROUTE_BUY_LIMIT)type=OP_BUYLIMIT;else if(p.route==AP52_ROUTE_SELL_LIMIT)type=OP_SELLLIMIT;else if(p.route==AP52_ROUTE_BUY_STOP)type=OP_BUYSTOP;else if(p.route==AP52_ROUTE_SELL_STOP)type=OP_SELLSTOP;if(type<0){g_reason="NO_ROUTE";return;}if(type==OP_BUY)pr=Ask;if(type==OP_SELL)pr=Bid;if(type==OP_BUYLIMIT&&pr>=Ask-md){g_reason="BUY_LIMIT_DISTANCE";return;}if(type==OP_SELLLIMIT&&pr<=Bid+md){g_reason="SELL_LIMIT_DISTANCE";return;}if(type==OP_BUYSTOP&&pr<=Ask+md){g_reason="BUY_STOP_DISTANCE";return;}if(type==OP_SELLSTOP&&pr>=Bid-md){g_reason="SELL_STOP_DISTANCE";return;}double sl=p.sl,tp=p.tp;if(p.direction>0){sl=MathMin(sl,pr-md);tp=MathMax(tp,pr+md);}else{sl=MathMax(sl,pr+md);tp=MathMin(tp,pr-md);}pr=NormalizeDouble(pr,dg);sl=NormalizeDouble(sl,dg);tp=NormalizeDouble(tp,dg);ResetLastError();int tk=OrderSend(Symbol(),type,Lots,pr,SlippagePoints,sl,tp,"AurumPulse v6.53 TEST7",MagicNumber,0,clrNONE);if(tk<0){g_reason="ORDERSEND_ERR_"+IntegerToString(GetLastError());return;}g_reason="ORDER_SENT";PrintFormat("[v6.53 TEST7 ORDER] ticket=%d route=%d dir=%d entry=%.*f SL=%.*f TP=%.*f",tk,p.route,p.direction,dg,pr,dg,sl,dg,tp);}
+int OnInit(){Print("=== AurumPulse v6.53 TEST7 LIFECYCLE DIAGNOSTIC ===");Print("TEST7 uses v6.52 execution engine unchanged; diagnostics only.");Dashboard();return INIT_SUCCEEDED;}
+void OnDeinit(const int reason){DeleteDashboard();}
+void OnTick(){if(g_lastBar==0||iTime(Symbol(),Period(),0)!=g_lastBar){g_lastBar=iTime(Symbol(),Period(),0);ReadIndicators();g_reason=GateReason(g_dir);if(g_dir!=0&&g_ha==g_dir&&g_espFresh&&g_esp==g_dir&&!g_sideways&&!g_chase){AP52_MarketContext c;ZeroMemory(c);c.bid=Bid;c.ask=Ask;c.atr=g_atr;c.direction=g_dir;c.freshSTFlip=g_stSync;c.haDirection=g_ha;c.espDirection=g_esp;c.resistanceZone=Valid(g_res)&&g_res>Ask&&(g_res-Ask)<=g_atr;c.supportZone=Valid(g_sup)&&g_sup<Bid&&(Bid-g_sup)<=g_atr;c.structureDirection=c.supportZone?1:(c.resistanceZone?-1:0);c.structurePrice=g_dir>0?(Valid(g_sup)?g_sup:Bid-g_atr):(Valid(g_res)?g_res:Ask+g_atr);c.invalidationPrice=g_dir>0?c.structurePrice-g_atr*.25:c.structurePrice+g_atr*.25;AP52_ExecutionPlan p;ZeroMemory(p);if(AP52_BuildPlan(c,g_dir,p)){g_route=p.route;g_votes=p.votes;SendPlan(p);}else{g_route=0;g_votes=0;g_reason="PLAN_BUILD_REJECTED";}}else{g_route=0;g_votes=0;PrintFormat("[v6.53 TEST7 NO TRADE] %s",g_reason);}}Manage();Dashboard();}
+//+------------------------------------------------------------------+
